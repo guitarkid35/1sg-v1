@@ -5,11 +5,14 @@
 ## How to install
 
 Prerequisites:
-* [Node.js](http://nodejs.org/) >=8.0.0
-* [Sass](http://sass-lang.com/) >=3.4.0  
-* [Pug](https://pugjs.org/) >=2.0.0 
+* [Node.js](http://nodejs.org/) >=7.6.0 
 * [Bower](http://bower.io/)
-* [Gulp](http://bower.io/)
+* [Gulp](http://gulpjs.com/)
+
+Tools
+* [Browserify](http://browserify.org/) for dependency management
+* [Gulp](http://gulpjs.com/) for running tasks
+* [BrowserSync](http://browsersync.io/) for keeping things in sync while developing
 
 Installation process:
 1. Clone this repository

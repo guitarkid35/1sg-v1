@@ -1,0 +1,24 @@
+.team--03 {
+	text-align: center;
+}
+.team__container--03 {
+	@extend .container;
+}
+.team__item--03 {
+	float: left;
+	left: 0; //a hack for better filterizr plugin position
+	width: 25%;
+	height: 190px;
+	@media (#{$max_tablets}) {
+		height: 150px;
+	}
+	@media (max-width: 700px) {
+		width: 33.3%;
+	}
+	@media (#{$max_phones}) {
+		width: 50%;
+	}
+}
+.team__item_img--03 {
+	height: 100%;
+}

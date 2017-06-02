@@ -1,0 +1,16 @@
+{
+  "name": "cepave.com",
+  "description": "na",
+  "main": "gulpfile.js",
+  "authors": [
+    "DuableJ"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "filterizr": "https://github.com/giotiskl/Filterizr.git#^1.2.3",
+    "bootstrap": "v4.0.0-alpha.2",
+    "webfontloader": "^1.6.24"
+  }
+}

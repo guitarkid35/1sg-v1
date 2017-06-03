@@ -5,14 +5,37 @@ $container_side_margin: 15px;
 $button_height: 42px;
 
 //colors
-$sky: #1b8bf9;
-$steel: #242526;
-$concrete: #747474;
-$cloud: #bcc6d0;
-$rain: #e7e7e7;
-$stone: #f6f6f6;
-$mars: #f84b29;
-$grass: #21d593;
+$color-primay       : #4D6AFF;
+$color-secondary    : #414870;
+
+$color-blue-light   : #4DE1FF;
+$color-blue         : #4CA6FF;
+$color-blue-dark    : #4D6AFF;
+$color-blue-darker  : #17317B;
+$color-robin-blue   : #00D4BE;
+$color-green        : #16D987;
+$color-yellow       : #FFC725;
+$color-orange       : #FF8870;
+$color-red          : #FF566D;
+$color-purple       : #CE6EE8;
+
+$color-gray-darkest : #50566E;
+$color-gray-darker  : #747B91;
+$color-gray         : #9EA5B8;
+$color-gray-light   : #C5CBD9;
+$color-gray-lighter : #E1E5ED;
+$color-gray-ligtest : #F2F4F7;
+$black              : #000526;
+$white              : #FFFFFF;
+
+$sky                : #1b8bf9;
+$steel              : #414870;
+$concrete           : #747474;
+$cloud              : #bcc6d0;
+$rain               : #e7e7e7;
+$stone              : #f6f6f6;
+$mars               : #f84b29;
+$grass              : #21d593;
 
 //media queries (notice: there are some local media queries starting with the underscore char: $_scaling_range)
 	//aspect ratios:

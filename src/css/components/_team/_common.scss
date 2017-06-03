@@ -1,39 +1,22 @@
-.team  {
+.team {
   padding: 80px 0;
   text-align: center;
   @media (#{$max_phones})  {
     padding: 50px 0 70px;
   }
-  &__row  {
+  &__row {
     @extend .container-fluid;
     position: relative;
     max-width: 1140px;
   }
-
   &:last-child {
     margin-bottom: 0;
   }
-
   &.state-hidden-team-row {
     display: none;
   }
-
-  &__item {
-    text-decoration: none;
-
-    &:hover, &:focus, &:active, &:visited {
-      text-decoration: none;
-    }
-    @extend .team__item--03;
-  }
-  &__item_img {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  &__title_box {
+  &__title-box {
     margin-bottom: 50px;
-
     @media (#{$max_phones}) {
       margin-bottom: 20px;
     }
@@ -56,12 +39,76 @@
     font-size: 14px;
     color: $concrete;
   }
-  &__filter_tags {
+  &__filter-tags {
     @include clear_list;
     margin: 0 0 40px;
+    &__item {
+      display: inline-block;
+      margin: 0 5.5px 10px;
+      button {
+        @extend .button;
+        @extend .button--extra-small;
+      }
+    }
   }
-  &__filter_tags__item {
-    display: inline-block;
-    margin: 0 5.5px 10px;
+}
+@mixin team-list-content($color) {
+  .team-list__item__cover {
+    &:first-child {
+      background-color: rgba($color,1);
+      &:hover {
+        background-color: rgba($color,1);
+      }
+    }
+    &:hover {
+      background-color: rgba($color,.75);
+      .team-list__item__text {
+        color: $white;
+      }
+    }
+  }
+}
+.team-list {
+  @include clear_list;
+  &__item {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      text-decoration: none;
+    }
+    @extend .team-list__item--03;
+    &__img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @extend .team-list__item__img--03;
+    }
+  }
+  .team-list__item__cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  &--ga {
+    @include team-list-content($color-yellow);
+  }
+  &--communty {
+    @include team-list-content($color-orange);
+  }
+  &--enginering {
+    @include team-list-content($color-red);
+  }
+  &--product {
+    @include team-list-content($color-purple);
+  }
+  &__item__text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: transparent;
   }
 }

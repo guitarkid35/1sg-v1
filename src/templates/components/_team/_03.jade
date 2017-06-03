@@ -1,42 +1,72 @@
 // == START OF team 03 ==
+mixin team-list__item(category, style, name, title)
+  li.team-list__item(data-category=category, class='filtr-item')
+    .team-list__item__img(style=style)
+    .team-list__item__cover
+      .team-list__item__text
+        .team-list__item__text--name #{name}
+        .team-list__item__text--title #{title}
 .team.team--03
-	.team__title_box
-		.team__title
-			| 英雄者聯盟
-		p 這裡聚集不同領域的專家和技術宅，只怕你不敢來華山論劍。
-		ul.team__filter_tags
-			// For filtering controls add
-			li.team__filter_tags__item
-				button.button.button--black.button--extra-small.js-filtering-button(type='button', data-filter='all')
-					| all
-			li.team__filter_tags__item
-				button.button.button--gray.button--extra-small.js-filtering-button(type='button', data-filter='1')
-					| G & A
-			li.team__filter_tags__item
-				button.button.button--gray.button--extra-small.js-filtering-button(type='button', data-filter='2')
-					| Community
-			li.team__filter_tags__item
-				button.button.button--gray.button--extra-small.js-filtering-button(type='button', data-filter='3')
-					| Engineering
-			li.team__filter_tags__item
-				button.button.button--gray.button--extra-small.js-filtering-button(type='button', data-filter='3')
-					| Product
-		.team__row
-			.filtr-container.team__container--03
-				a.team__item(data-category='1', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/FFC725/000000)')
-				a.team__item(data-category='1', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/DDDDDD/000000)')
-				a.team__item(data-category='2', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/FF8870/000000)')
-				a.team__item(data-category='2', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/DDDDDD/000000)')
-				a.team__item(data-category='3', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/FF566D/000000)')
-				a.team__item(data-category='2', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/DDDDDD/000000)')
-				a.team__item(data-category='4', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/CE6EE8/000000)')
-				a.team__item(data-category='4, 1', href='#', class='filtr-item')
-					.team__item_img.team__item_img--03(style='background-image: url(http://via.placeholder.com/250/DDDDDD/000000)')
+  .team__title-box
+    .team__title
+      | 英雄者聯盟
+    .team__text 這裡聚集不同領域的專家和技術宅，只怕你不敢來華山論劍。
+  ul.team__filter-tags
+    // For filtering controls add
+    li.team__filter-tags__item
+      button.button--black(type='button', data-filter='all', class='js-filtering-button')
+        | all
+    li.team__filter-tags__item
+      button.button--gray(type='button', data-filter='1', class='js-filtering-button')
+        | G & A
+    li.team__filter-tags__item
+      button.button--gray(type='button', data-filter='2', class='js-filtering-button')
+        | Community
+    li.team__filter-tags__item
+      button.button--gray(type='button', data-filter='3', class='js-filtering-button')
+        | Engineering
+    li.team__filter-tags__item
+      button.button--gray(type='button', data-filter='4', class='js-filtering-button')
+        | Product
+  .team__row
+    .filtr-container.team__container--03
+      ul.team-list.team-list--ga
+        li.team-list__item(data-category='1', class='filtr-item')
+          .team-list__item__cover
+        +team-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kenneth','VP')
+        +team-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kordan','Team Lead')
+        +team-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','LuLu','HR')
+      ul.team-list.team-list--communty
+        li.team-list__item(data-category='2', class='filtr-item')
+          .team-list__item__cover
+        +team-list__item('2','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kordan','Open Falcon')
+        +team-list__item('2','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Masato','Open Falcon')
+      ul.team-list.team-list--enginering
+        li.team-list__item(data-category='3', class='filtr-item')
+          .team-list__item__cover
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Don','Sr. Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','M.Y.Hung','DevOps Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','C.H.Yeh','Software Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','C.M.Lin','Software Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Mike','Sr. Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Masato','Sr. Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Laurence','Software Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kelly','Front End Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','H.W.Wang','Software Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','B.M.Wu','Sr. Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Roby','Sr. DevOps Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Jamie','Sr. Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Brian','Sr. Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Ben','Software Engineer')
+        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Desmond','Front End Engineer')
+        
+      ul.team-list.team-list--product
+        li.team-list__item(data-category='4', class='filtr-item')
+          .team-list__item__cover
+        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Y.Y.Shue','UX Designer')
+        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','JJ','Designer')
+        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Birdie','UI/UX Designer')
+        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Jiyi','Software Engineer')
+        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Totoro','Product Memenger')
+
 // == END OF team 02 ==

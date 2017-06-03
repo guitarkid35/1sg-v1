@@ -4,11 +4,11 @@
 .team__container--03 {
 	@extend .container;
 }
-.team__item--03 {
+.team-list__item--03 {
 	float: left;
 	left: 0; //a hack for better filterizr plugin position
-	width: 25%;
-	height: 190px;
+	width: 100 / 6 * 1%;
+	height: 185px;
 	@media (#{$max_tablets}) {
 		height: 150px;
 	}
@@ -19,6 +19,6 @@
 		width: 50%;
 	}
 }
-.team__item_img--03 {
+.team-list__item__img--03 {
 	height: 100%;
 }

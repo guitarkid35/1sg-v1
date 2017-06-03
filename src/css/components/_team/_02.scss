@@ -1,0 +1,135 @@
+.section {
+}
+.section__item {
+	text-align: center;
+}
+.section__title_box {
+	text-align: center;
+}
+.section__description{
+	@include font_loader($montserrat, 3, 'n');
+
+	display: inline-block;
+
+	max-width: 500px;
+
+	font-size: 16px;
+	color: $concrete;
+}
+.section__row{
+	margin-bottom: 85px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.section__item_title{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 10px;
+
+	font-size: 13px;
+	color: $steel;
+	text-transform: uppercase;
+	letter-spacing: 0.085em;
+}
+.section__item_text{
+	@include font_loader($montserrat, 4, 'n');
+
+	display: block;
+
+	width: 70%;
+	margin: auto;
+
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	color: $concrete;
+
+	.col-lg-3 &{
+		width: 90%;
+	}
+}
+.section__item_link{
+	@include font_loader($montserrat, 7, 'n');
+
+	display: inline-block;
+	position: relative;
+
+	max-width: 400px;
+
+	font-size: 10px;
+	text-transform: uppercase;
+	color: $sky;
+	text-decoration: none;
+
+	&:before{
+		content: "";
+		position: absolute;
+
+		left: 0;
+		right: 0;
+
+		bottom: -2px;
+		height: 1px;
+
+		background-color: grey;
+
+		transition: opacity 0.4s ease;
+	}
+
+	&:hover, &:focus, &:active, &:visited{
+		color: $sky;
+		text-decoration: none;
+
+		&:before{
+			opacity: 0.5;
+		}
+	}
+}
+.section--02 {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 60px;
+		width: 100%;
+		background-image: url('../img/half-oval.svg');
+		background-size: cover;
+		background-position-x: center;
+		bottom: 100%;
+	}
+	background: $white;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media (#{$max_phones}){
+		padding: 50px 0;
+	}
+}
+.section__title_box--02{
+	margin-bottom: 50px;
+}
+.section__title--02{
+	@include font_loader($montserrat, 7, 'n');
+
+	margin-bottom: 25px;
+
+	font-size: 44px;
+	color: $steel;
+
+	@media (#{$max_phones}){
+		font-size: 34px;
+	}
+}
+.section__item--02{
+	margin-bottom: 50px;
+}
+.section__description--02{
+}
+.section__item_icon_circle--02{
+	height: 35px;
+
+	background-color: transparent;
+}

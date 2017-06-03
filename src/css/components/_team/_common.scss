@@ -2,6 +2,7 @@
   padding: 80px 0;
   text-align: center;
   background-color: $color-gray-ligtest;
+  position: relative;
   @media (#{$max_phones})  {
     padding: 50px 0 70px;
   }
@@ -82,12 +83,12 @@
     &:visited {
       text-decoration: none;
     }
-    @extend .team-list__item--03;
+    @extend .team-03-list__item;
     &__img {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      @extend .team-list__item__img--03;
+      @extend .team-03-list__item__img;
     }
   }
   .team-list__item__cover {

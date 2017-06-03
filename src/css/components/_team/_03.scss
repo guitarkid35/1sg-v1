@@ -1,12 +1,11 @@
-.team--03 {
+.team-03 {
 	text-align: center;
 	background: $color-gray-ligtest;
-	position: relative;
 }
-.team__container--03 {
+.team-03__container {
 	@extend .container;
 }
-.team-list__item--03 {
+.team-03-list__item {
 	float: left;
 	left: 0; //a hack for better filterizr plugin position
 	width: 100 / 6 * 1%;
@@ -21,6 +20,6 @@
 		width: 50%;
 	}
 }
-.team-list__item__img--03 {
+.team-03-list__item__img {
 	height: 100%;
 }

@@ -6,7 +6,7 @@ mixin team-list__item(category, style, name, title)
       .team-list__item__text
         .team-list__item__text--name #{name}
         .team-list__item__text--title #{title}
-.team.team--03
+.team.team-03
   .team__title-box
     .team__title
       | 英雄者聯盟
@@ -29,7 +29,7 @@ mixin team-list__item(category, style, name, title)
       button.button--gray(type='button', data-filter='4', class='js-filtering-button')
         | Product
   .team__row
-    .filtr-container.team__container--03
+    .filtr-container.team-03__container
       ul.team-list.team-list--ga
         li.team-list__item(data-category='1', class='filtr-item')
           .team-list__item__cover

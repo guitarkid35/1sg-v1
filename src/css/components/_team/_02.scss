@@ -1,12 +1,12 @@
-.section {
+.team {
 }
-.section__item {
+.team__item {
 	text-align: center;
 }
-.section__title_box {
+.team__title_box {
 	text-align: center;
 }
-.section__description{
+.team__description {
 	@include font_loader($montserrat, 3, 'n');
 
 	display: inline-block;
@@ -16,7 +16,7 @@
 	font-size: 16px;
 	color: $concrete;
 }
-.section__row{
+.team__row {
 	margin-bottom: 85px;
 
 	&:last-child{
@@ -24,7 +24,7 @@
 	}
 }
 
-.section__item_title{
+.team__item_title {
 	@include font_loader($montserrat, 7, 'n');
 
 	margin-bottom: 10px;
@@ -34,7 +34,7 @@
 	text-transform: uppercase;
 	letter-spacing: 0.085em;
 }
-.section__item_text{
+.team__item_text {
 	@include font_loader($montserrat, 4, 'n');
 
 	display: block;
@@ -46,11 +46,11 @@
 	letter-spacing: 0.05em;
 	color: $concrete;
 
-	.col-lg-3 &{
+	.col-lg-3 & { 
 		width: 90%;
 	}
 }
-.section__item_link{
+.team__item_link {
 	@include font_loader($montserrat, 7, 'n');
 
 	display: inline-block;
@@ -78,16 +78,16 @@
 		transition: opacity 0.4s ease;
 	}
 
-	&:hover, &:focus, &:active, &:visited{
+	&:hover, &:focus, &:active, &:visited {
 		color: $sky;
 		text-decoration: none;
 
-		&:before{
+		&:before {
 			opacity: 0.5;
 		}
 	}
 }
-.section--02 {
+.team-02 {
 	position: relative;
 	&:before {
 		content: '';
@@ -108,10 +108,10 @@
 		padding: 50px 0;
 	}
 }
-.section__title_box--02{
+.team-02__title_box {
 	margin-bottom: 50px;
 }
-.section__title--02{
+.team-02__title {
 	@include font_loader($montserrat, 7, 'n');
 
 	margin-bottom: 25px;
@@ -123,13 +123,9 @@
 		font-size: 34px;
 	}
 }
-.section__item--02{
+.team-02__item {
 	margin-bottom: 50px;
 }
-.section__description--02{
+.section-02__description {
 }
-.section__item_icon_circle--02{
-	height: 35px;
 
-	background-color: transparent;
-}

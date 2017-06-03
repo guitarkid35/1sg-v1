@@ -33,28 +33,34 @@ mixin team-list__item(category, style, name, title)
       ul.team-list.team-list--ga
         li.team-list__item(data-category='1', class='filtr-item')
           .team-list__item__cover
+            .team-list__item__text
+              .team-list__item__text--name G & A
         +team-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kenneth','VP')
-        +team-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kordan','Team Lead')
-        +team-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','LuLu','HR')
+        +team-list__item('1','background-image: url(img/avant/kordan.png)','Kordan','Team Lead')
+        +team-list__item('1','background-image: url(img/avant/lulu.png)','LuLu','HR')
       ul.team-list.team-list--communty
         li.team-list__item(data-category='2', class='filtr-item')
           .team-list__item__cover
-        +team-list__item('2','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kordan','Open Falcon')
-        +team-list__item('2','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Masato','Open Falcon')
+            .team-list__item__text
+              .team-list__item__text--name Community
+        +team-list__item('2','background-image: url(img/avant/kordan.png)','Kordan','Open Falcon')
+        +team-list__item('2','background-image: url(img/avant/masato.png)','Masato','Open Falcon')
       ul.team-list.team-list--enginering
         li.team-list__item(data-category='3', class='filtr-item')
           .team-list__item__cover
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Don','Sr. Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','M.Y.Hung','DevOps Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','C.H.Yeh','Software Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','C.M.Lin','Software Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Mike','Sr. Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Masato','Sr. Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Laurence','Software Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kelly','Front End Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','H.W.Wang','Software Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','B.M.Wu','Sr. Engineer')
-        +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Roby','Sr. DevOps Engineer')
+            .team-list__item__text
+              .team-list__item__text--name Engineering
+        +team-list__item('3','background-image: url(img/avant/don.png)','Don','Sr. Engineer')
+        +team-list__item('3','background-image: url(img/avant/myhung.png)','M.Y.Hung','DevOps Engineer')
+        +team-list__item('3','background-image: url(img/avant/chyeh.png)','C.H.Yeh','Software Engineer')
+        +team-list__item('3','background-image: url(img/avant/jeremy.png)','C.M.Lin','Software Engineer')
+        +team-list__item('3','background-image: url(img/avant/mike.png)','Mike','Sr. Engineer')
+        +team-list__item('3','background-image: url(img/avant/masato.png)','Masato','Sr. Engineer')
+        +team-list__item('3','background-image: url(img/avant/laurence.png)','Laurence','Software Engineer')
+        +team-list__item('3','background-image: url(img/avant/kelly.png)','Kelly','Front End Engineer')
+        +team-list__item('3','background-image: url(img/avant/hww.png)','H.W.Wang','Software Engineer')
+        +team-list__item('3','background-image: url(img/avant/bm.png)','B.M.Wu','Sr. Engineer')
+        +team-list__item('3','background-image: url(img/avant/roby.png)','Roby','Sr. DevOps Engineer')
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Jamie','Sr. Engineer')
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Brian','Sr. Engineer')
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Ben','Software Engineer')
@@ -63,10 +69,12 @@ mixin team-list__item(category, style, name, title)
       ul.team-list.team-list--product
         li.team-list__item(data-category='4', class='filtr-item')
           .team-list__item__cover
-        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Y.Y.Shue','UX Designer')
-        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','JJ','Designer')
-        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Birdie','UI/UX Designer')
-        +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Jiyi','Software Engineer')
+            .team-list__item__text
+              .team-list__item__text--name Product
+        +team-list__item('4','background-image: url(img/avant/ys.png)','Y.Y.Shue','UX Designer')
+        +team-list__item('4','background-image: url(img/avant/jj.png)','JJ','Designer')
+        +team-list__item('4','background-image: url(img/avant/birdie.png)','Birdie','UI/UX Designer')
+        +team-list__item('4','background-image: url(img/avant/jiyi.png)','Jiyi','Software Engineer')
         +team-list__item('4','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Totoro','Product Memenger')
 
 // == END OF team 02 ==

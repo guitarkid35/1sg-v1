@@ -56,6 +56,9 @@
   .team-list__item__cover {
     &:first-child {
       background-color: rgba($color,1);
+      .team-list__item__text {
+        color: inherit;
+      }
       &:hover {
         background-color: rgba($color,1);
       }

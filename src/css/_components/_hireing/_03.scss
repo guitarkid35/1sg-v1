@@ -1,0 +1,131 @@
+
+@mixin hireing_benefit-list__item__cover($color){
+  .hireing_benefit-list__item__cover {
+    background-color: rgba($color, 1);
+  }
+  &:hover {
+    .hireing_benefit-list__item__cover {
+      transition: background-color .75s;
+      background-color: rgba($color, 0);
+    }
+  }
+}
+
+    @include hireing_benefit-list__item__cover($color-blue-dark);
+.hireing_benefit-list__item {
+  .hireing_benefit-list__item__text {
+    color: $white;
+  }
+  &:nth-child(1) {
+    @include hireing_benefit-list__item__cover($color-blue-dark);
+  }
+  &:nth-child(2) {
+    @include hireing_benefit-list__item__cover($color-blue);
+  }
+  &:nth-child(3) {
+    @include hireing_benefit-list__item__cover($color-blue-light);
+  }
+  &:nth-child(4) {
+    @include hireing_benefit-list__item__cover($color-robin-blue);
+  }
+  &:nth-child(5) {
+    @include hireing_benefit-list__item__cover($color-green);
+  }
+  &:nth-child(6) {
+    @include hireing_benefit-list__item__cover($color-yellow);
+  }
+  &:nth-child(7) {
+    @include hireing_benefit-list__item__cover($color-orange);
+  }
+  &:nth-child(8) {
+    @include hireing_benefit-list__item__cover($color-red);
+  }
+  &:nth-child(9) {
+    @include hireing_benefit-list__item__cover($color-purple);
+  }
+  &:nth-child(10) {
+    @include hireing_benefit-list__item__cover($color-secondary);
+  }
+  &:nth-child(11) {
+    @include hireing_benefit-list__item__cover($color-blue-darker);
+  }
+  &:nth-child(12) {
+    @include hireing_benefit-list__item__cover($color-blue);
+  }
+}
+
+
+.hireing-03 {
+  text-align: center;
+  background: $color-gray-ligtest;
+  &__container {
+    @extend .container;
+  }
+
+  .hireing {
+
+    &__filter-tags {
+      @include clear_list;
+      margin: 0 0 40px;
+      &__item {
+        display: inline-block;
+        margin: 0 5.5px 10px;
+        button {
+          @extend .button;
+          @extend .button--extra-small;
+        }
+      }
+    }
+
+    &_benefit-list {
+      @include clear_list;
+      &__item {
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+          text-decoration: none;
+        }
+        float: left;
+        left: 0; //a hack for better filterizr plugin position
+        width: 100 / 4 * 1%;
+        height: 185px;
+
+        @media (#{$max_tablets}) {
+          height: 150px;
+        }
+        @media (max-width: 700px) {
+          width: 33.3%;
+        }
+        @media (#{$max_phones}) {
+          width: 50%;
+        }
+        &__cover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
+        &__img {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          height: 100%;
+        }
+        &__text {
+
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $white;
+          font-size: 16px;
+          @include font_loader($montserrat, 1, 'n');
+          padding: 0 48px;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+// == START OF HIREING 03 ==
+mixin hireing-list__item(category, style, benefit)
+  li.hireing_benefit-list__item(data-category=category, class='filtr-item')
+    .hireing_benefit-list__item__img(style=style)
+    .hireing_benefit-list__item__cover
+      .hireing_benefit-list__item__text
+        | #{benefit}
+
+// == START OF HIREING 03 ==
+.hireing.hireing-03
+  .hireing__title-box
+    h2.hireing__title
+      | 福利制度
+    span.hireing__description
+      | We are passionate about creating unique monitoring experiences.
+  .hireing__row
+    .hireing-03__container.filtr-container
+      ul.hireing_benefit-list
+        +hireing-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','每天吃不完的零食及喝不完的飲料')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','每人高額 BYOD 補助、Dell 螢幕設計師配 MacPro、Dell 螢幕 or iMac27')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','每週 TGIF 下午茶活動')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','每月電影欣賞')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','每月運動補助津貼')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','每年員工健康檢查')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','特休假採社會年資計算')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','遠端工作')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','鼓勵利用上班時間參與技術聚會/黑客松/研討會')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','通訊補助、員工分紅、三節獎金、績效獎金')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','勞、健保及退休金提撥')
+        +hireing-list__item('1','background-image: url(img/avant/birdie.png)','每半年團建活動')
+// == END OF HIREING 03 ==

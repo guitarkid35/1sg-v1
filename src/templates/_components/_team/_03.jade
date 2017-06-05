@@ -15,6 +15,7 @@ mixin team-list__item(category, style, name, title)
       | 這裡聚集不同領域的專家和技術宅，只怕你不敢來華山論劍。
   ul.team__filter-tags
     // For filtering controls add
+    - var item = ".team__filter-tags__item";
     li.team__filter-tags__item
       button.button--black(type='button', data-filter='all', class='js-filtering-button')
         | all

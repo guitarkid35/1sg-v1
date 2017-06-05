@@ -8,8 +8,9 @@
   }
   &__row {
     @extend .container-fluid;
-    position: relative;
-    max-width: 1140px;
+    padding: 0;
+    // max-width: 1140px;
+    // position: relative;
   }
   &__title-box {
     margin-bottom: 60px;

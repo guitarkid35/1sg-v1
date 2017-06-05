@@ -10,8 +10,6 @@
     }
   }
 }
-
-    @include hireing_benefit-list__item__cover($color-blue-dark);
 .hireing_benefit-list__item {
   .hireing_benefit-list__item__text {
     color: $white;
@@ -58,28 +56,18 @@
 .hireing-03 {
   text-align: center;
   background: $color-gray-ligtest;
-  &__container {
-    @extend .container;
-  }
+  // &__container {
+  //   @extend .container;
+  // }
 
   .hireing {
-
-    &__filter-tags {
-      @include clear_list;
-      margin: 0 0 40px;
-      &__item {
-        display: inline-block;
-        margin: 0 5.5px 10px;
-        button {
-          @extend .button;
-          @extend .button--extra-small;
-        }
-      }
-    }
-
     &_benefit-list {
       @include clear_list;
+      margin: 0 auto;
+      max-width: 1600px;
+      overflow: hidden;
       &__item {
+        position: relative;
         text-decoration: none;
         &:hover,
         &:focus,
@@ -88,18 +76,19 @@
           text-decoration: none;
         }
         float: left;
-        left: 0; //a hack for better filterizr plugin position
-        width: 100 / 4 * 1%;
-        height: 185px;
-
-        @media (#{$max_tablets}) {
-          height: 150px;
+        width: 100 / 6 * 1%;
+        height: 200px;
+        @media (#{$max_laptop}) {
+          width: 100 / 4 * 1%;
+          height: 185px;
         }
-        @media (max-width: 700px) {
-          width: 33.3%;
+        @media (#{$max_tablets}) {
+          width: 100 / 3 * 1%;
+          height: 160px;
         }
         @media (#{$max_phones}) {
-          width: 50%;
+          width: 100 / 2 * 1%;
+          height: 135px;
         }
         &__cover {
           position: absolute;
@@ -115,14 +104,13 @@
           height: 100%;
         }
         &__text {
-
           position: relative;
           top: 50%;
           transform: translateY(-50%);
           color: $white;
           font-size: 16px;
           @include font_loader($montserrat, 1, 'n');
-          padding: 0 48px;
+          padding: 0 10%;
         }
       }
     }

@@ -11,109 +11,28 @@
     position: relative;
     max-width: 1140px;
   }
-  &:last-child {
-    margin-bottom: 0;
-  }
-  &.state-hidden-team-row {
-    display: none;
-  }
   &__title-box {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     @media (#{$max_phones}) {
       margin-bottom: 20px;
     }
   }
   &__title {
-    @include font_loader($montserrat, 7, 'n');
-    margin-bottom: 20px;
-    font-size: 44px;
+    @include font_loader($montserrat, 4, 'n');
+    font-size: 36px;
     line-height: 1.3;
-
+    margin-bottom: 20px;
+    letter-spacing: .2em;
     @media (#{$max_phones}) {
-      font-size: 34px;
+      font-size: 32px;
     }
   }
-  &__text {
-    @include font_loader($montserrat, 3, 'n');
+  &__description {
+    @include font_loader($montserrat, 1, 'n');
     display: inline-block;
-    max-width: 450px;
-    margin: auto;
-    font-size: 14px;
-    color: $concrete;
-  }
-  &__filter-tags {
-    @include clear_list;
-    margin: 0 0 40px;
-    &__item {
-      display: inline-block;
-      margin: 0 5.5px 10px;
-      button {
-        @extend .button;
-        @extend .button--extra-small;
-      }
-    }
+    font-size: 20px;
+    color: $color-gray;
+    max-width: 80%;
   }
 }
-@mixin team-list-content($color) {
-  .team-list__item__cover {
-    &:first-child {
-      background-color: rgba($color,1);
-      .team-list__item__text {
-        color: inherit;
-      }
-      &:hover {
-        background-color: rgba($color,1);
-      }
-    }
-    &:hover {
-      background-color: rgba($color,.75);
-      .team-list__item__text {
-        color: $white;
-      }
-    }
-  }
-}
-.team-list {
-  @include clear_list;
-  &__item {
-    text-decoration: none;
-    &:hover,
-    &:focus,
-    &:active,
-    &:visited {
-      text-decoration: none;
-    }
-    @extend .team-03-list__item;
-    &__img {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      @extend .team-03-list__item__img;
-    }
-  }
-  .team-list__item__cover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-  }
-  &--ga {
-    @include team-list-content($color-yellow);
-  }
-  &--communty {
-    @include team-list-content($color-orange);
-  }
-  &--enginering {
-    @include team-list-content($color-red);
-  }
-  &--product {
-    @include team-list-content($color-purple);
-  }
-  &__item__text {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    color: transparent;
-  }
-}
+

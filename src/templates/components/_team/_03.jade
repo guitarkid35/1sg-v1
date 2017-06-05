@@ -1,16 +1,18 @@
-// == START OF team 03 ==
 mixin team-list__item(category, style, name, title)
-  li.team-list__item(data-category=category, class='filtr-item')
-    .team-list__item__img(style=style)
-    .team-list__item__cover
-      .team-list__item__text
-        .team-list__item__text--name #{name}
-        .team-list__item__text--title #{title}
+  li.team_member-list__item(data-category=category, class='filtr-item')
+    .team_member-list__item__img(style=style)
+    .team_member-list__item__cover
+      .team_member-list__item__text
+        .team_member-list__item__text--name #{name}
+        .team_member-list__item__text--title #{title}
+
+// == START OF team 03 ==
 .team.team-03
   .team__title-box
-    .team__title
+    h2.team__title
       | 英雄者聯盟
-    .team__text 這裡聚集不同領域的專家和技術宅，只怕你不敢來華山論劍。
+    span.team__description
+      | 這裡聚集不同領域的專家和技術宅，只怕你不敢來華山論劍。
   ul.team__filter-tags
     // For filtering controls add
     li.team__filter-tags__item
@@ -29,27 +31,27 @@ mixin team-list__item(category, style, name, title)
       button.button--gray(type='button', data-filter='4', class='js-filtering-button')
         | Product
   .team__row
-    .filtr-container.team-03__container
-      ul.team-list.team-list--ga
-        li.team-list__item(data-category='1', class='filtr-item')
-          .team-list__item__cover
-            .team-list__item__text
-              .team-list__item__text--name G & A
+    .team-03__container.filtr-container
+      ul.team_member-list.team_member-list--ga
+        li.team_member-list__item(data-category='1', class='filtr-item')
+          .team_member-list__item__cover
+            .team_member-list__item__text
+              .team_member-list__item__text--name G & A
         +team-list__item('1','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Kenneth','VP')
         +team-list__item('1','background-image: url(img/avant/kordan.png)','Kordan','Team Lead')
         +team-list__item('1','background-image: url(img/avant/lulu.png)','LuLu','HR')
-      ul.team-list.team-list--communty
-        li.team-list__item(data-category='2', class='filtr-item')
-          .team-list__item__cover
-            .team-list__item__text
-              .team-list__item__text--name Community
+      ul.team_member-list.team_member-list--communty
+        li.team_member-list__item(data-category='2', class='filtr-item')
+          .team_member-list__item__cover
+            .team_member-list__item__text
+              .team_member-list__item__text--name Community
         +team-list__item('2','background-image: url(img/avant/kordan.png)','Kordan','Open Falcon')
         +team-list__item('2','background-image: url(img/avant/masato.png)','Masato','Open Falcon')
-      ul.team-list.team-list--enginering
-        li.team-list__item(data-category='3', class='filtr-item')
-          .team-list__item__cover
-            .team-list__item__text
-              .team-list__item__text--name Engineering
+      ul.team_member-list.team_member-list--enginering
+        li.team_member-list__item(data-category='3', class='filtr-item')
+          .team_member-list__item__cover
+            .team_member-list__item__text
+              .team_member-list__item__text--name Engineering
         +team-list__item('3','background-image: url(img/avant/don.png)','Don','Sr. Engineer')
         +team-list__item('3','background-image: url(img/avant/myhung.png)','M.Y.Hung','DevOps Engineer')
         +team-list__item('3','background-image: url(img/avant/chyeh.png)','C.H.Yeh','Software Engineer')
@@ -66,11 +68,11 @@ mixin team-list__item(category, style, name, title)
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Ben','Software Engineer')
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Desmond','Front End Engineer')
         
-      ul.team-list.team-list--product
-        li.team-list__item(data-category='4', class='filtr-item')
-          .team-list__item__cover
-            .team-list__item__text
-              .team-list__item__text--name Product
+      ul.team_member-list.team_member-list--product
+        li.team_member-list__item(data-category='4', class='filtr-item')
+          .team_member-list__item__cover
+            .team_member-list__item__text
+              .team_member-list__item__text--name Product
         +team-list__item('4','background-image: url(img/avant/ys.png)','Y.Y.Shue','UX Designer')
         +team-list__item('4','background-image: url(img/avant/jj.png)','JJ','Designer')
         +team-list__item('4','background-image: url(img/avant/birdie.png)','Birdie','UI/UX Designer')

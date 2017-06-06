@@ -1,40 +1,36 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 
-	font-weight: 400;
+  font-weight: 400;
 }
-html{
-	height: 100%;
+html {
+  height: 100%;
 }
-body{
-	height: 100%;
-
-	font-family: Helvetica, Arial, sans-serif;
-
-	color: $steel;
-
-	@include font_loader($montserrat, 4, 'n');
-
-	&.state-fixed{
-		overflow: hidden;
-	}
+body {
+  height: 100%;
+  font-family: Helvetica, Arial, "PingFangTC-Light", "Noto Sans Light", sans-serif;
+  color: $color-gray-dark;
+  @include font_loader($montserrat, 4, 'n');
+  &.state-fixed{
+    overflow: hidden;
+  }
 }
-a{
-	&, &:hover, &:focus{
-		color: inherit;
-	}
+a {
+  &, &:hover, &:focus {
+    color: inherit;
+  }
 }
-button{
-	padding: 0;
-	margin: 0;
-	border: none;
-	background: none;
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
 }
 button:focus,
 input:focus,
-textarea:focus{
-	outline: none;
+textarea:focus {
+  outline: none;
 }
-input{
-	border: none;
+input {
+  border: none;
 }

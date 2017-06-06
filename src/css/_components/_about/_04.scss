@@ -1,0 +1,51 @@
+.about-04 {
+  position: relative;
+  background: $color-gray-ligtest;
+  padding-bottom: 120px;
+  @media (#{$max_phones}){
+    padding: 50px 0;
+  }
+  .about {
+
+    &__filter-tags {
+      @include clear_list;
+      margin: 0 0 40px;
+      &__item {
+        display: inline-block;
+        margin: 0 5.5px 10px;
+        button {
+          @extend .button;
+          @extend .button--extra-small;
+        }
+      }
+    }
+    &__item {
+      text-align: center;
+      margin-bottom: 56px;
+      float: left;
+      width: 100 / 3 * 1%;
+      height: 250px;
+      @media (#{$max_laptop}) {
+        height: 320px;
+      }
+      @media (#{$max_tablets}) {
+        width: 100 / 2 * 1%;
+        height: 280px;
+      }
+      @media (#{$max_phones}) {
+        width: 100 / 1 * 1%;
+      }
+      &_img {
+        margin-bottom: 60px;
+      }
+      &_title {
+        @include font_loader($montserrat, 4, 'n');
+        margin-bottom: 24px;
+        font-size: 16px;
+        color: $color-gray-darkest;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+      }
+    }
+  }
+}

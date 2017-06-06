@@ -1,4 +1,3 @@
-
 @mixin hireing_benefit-list__item__cover($color){
   .hireing_benefit-list__item__cover {
     background-color: rgba($color, 1);
@@ -10,48 +9,17 @@
     }
   }
 }
-.hireing_benefit-list__item {
-  .hireing_benefit-list__item__text {
-    color: $white;
-  }
-  &:nth-child(1) {
-    @include hireing_benefit-list__item__cover($color-blue-dark);
-  }
-  &:nth-child(2) {
-    @include hireing_benefit-list__item__cover($color-blue);
-  }
-  &:nth-child(3) {
-    @include hireing_benefit-list__item__cover($color-blue-light);
-  }
-  &:nth-child(4) {
-    @include hireing_benefit-list__item__cover($color-robin-blue);
-  }
-  &:nth-child(5) {
-    @include hireing_benefit-list__item__cover($color-green);
-  }
-  &:nth-child(6) {
-    @include hireing_benefit-list__item__cover($color-yellow);
-  }
-  &:nth-child(7) {
-    @include hireing_benefit-list__item__cover($color-orange);
-  }
-  &:nth-child(8) {
-    @include hireing_benefit-list__item__cover($color-red);
-  }
-  &:nth-child(9) {
-    @include hireing_benefit-list__item__cover($color-purple);
-  }
-  &:nth-child(10) {
-    @include hireing_benefit-list__item__cover($color-secondary);
-  }
-  &:nth-child(11) {
-    @include hireing_benefit-list__item__cover($color-blue-darker);
-  }
-  &:nth-child(12) {
-    @include hireing_benefit-list__item__cover($color-blue);
+
+@each $child, $color in (1: $color-blue-dark, 2: $color-blue, 3: $color-blue-light, 4: $color-robin-blue, 5: $color-green, 6: $color-yellow, 7: $color-orange, 8: $color-red, 9: $color-purple, 10: $color-secondary, 11: $color-blue-darker, 12: $color-blue){
+  .hireing_benefit-list__item {
+    .hireing_benefit-list__item__text {
+      color: $white;
+    }
+    &:nth-child(#{$child}) {
+      @include hireing_benefit-list__item__cover($color);
+    }
   }
 }
-
 
 .hireing-03 {
   text-align: center;

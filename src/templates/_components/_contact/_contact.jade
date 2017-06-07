@@ -1,0 +1,28 @@
+// == START OF contacts ==
+.contacts.contacts
+	.container
+		.row
+			.col-xs-12.contacts_info_column
+				.contacts__info
+					h2.contacts__title.contacts__title
+						| Contact info
+					.contacts__content
+						.contacts__item
+							h3.contacts__item_title
+								| Phone: 
+							span.contacts__item_text
+								| (+886) 2341 8819
+						.contacts__item
+							h3.contacts__item_title
+								| FAX:
+							span.contacts__item_text
+								| (+886) 2341 8819
+						.contacts__item
+							h3.contacts__item_title
+								| email
+							a.contacts__item_text(href="mailto:info@cepave.com", target="_blank")
+								| info@cepave.com
+	.contacts__map_box
+		#map-wrapper.map-wrap.contacts__map
+	include _google-map
+// == END OF contacts ==

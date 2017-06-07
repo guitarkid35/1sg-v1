@@ -5,30 +5,32 @@
       | 我們的文化
     span.about__description
       | Just Do It，少囉唆、先做事。
-  ul.about__filter-tags
-    // For filtering controls add
-    - var item = ".about__filter-tags__item";
-    li.about__filter-tags__item
-      button.button--black(type='button', data-filter='1', class='js-filtering-button')
+  .about__culture_box
+    button.about__culture_item.state-active.js-content-trigger(type="button", data-content-index="culture_1")
+      h3.about__culture_title
         | 追求速度與激情
-    li.about__filter-tags__item
-      button.button--gray(type='button', data-filter='2', class='js-filtering-button')
+    button.about__culture_item.js-content-trigger(type="button", data-content-index="culture_2")
+      h3.about__culture_title
         | 化繁為簡
-    li.about__filter-tags__item
-      button.button--gray(type='button', data-filter='3', class='js-filtering-button')
+    button.about__culture_item.js-content-trigger(type="button", data-content-index="culture_3")
+      h3.about__culture_title
         | 因為年輕又狂野
-  .container
-    .row.filtr-container
-      .about__item
-        img.about__item_img(src='img/hireing-culture-01.svg')
-        h3.about__item_title
+
+  //the first one is visible by default
+  .container.about__culture_text_box.js-content-box(data-content-index="culture_1", style="display:block")
+    .row
+      .col-lg-4.col-lg-offset-4.col-xs-6
+        span.about__text
           | 看緊目標、快速迭代，我們追求用最小的管理，靈活、快速、有效率的溝通。
-      .about__item
-        img.about__item_img(src='img/hireing-culture-02.svg')
-        h3.about__item_title
+  .container.about__culture_text_box.js-content-box(data-content-index="culture_2")
+    .row
+      .col-lg-4.col-lg-offset-4.col-xs-6
+        span.about__text
           | 我們面對混亂、終結混亂，追求最接近使用場景的貼心，贏得客戶信賴。
-      .about__item
-        img.about__item_img(src='img/hireing-culture-03.svg')
-        h3.about__item_title
+  .container.about__culture_text_box.js-content-box(data-content-index="culture_3")
+    .row
+      .col-lg-4.col-lg-offset-4.col-xs-6
+        span.about__text
           | 制度無法管理態度，因為彼此信任，年輕讓我們突破體制，狂放而熱情邁向目標。
 // == END OF ABOUT 02 ==
+

@@ -1,0 +1,54 @@
+script(src='https://maps.googleapis.com/maps/api/js?v=3.exp')
+script.
+  var map;
+  function initialize() {
+    var mapOptions = {
+      zoom: 15,
+      scrollwheel: false,
+      center: new google.maps.LatLng(25.0449856, 121.5213585),
+      panControl: false,
+      zoomControl: true,
+      styles: [
+        {'stylers': [{ 'hue': '#414870' }, { saturation: -95 }]},
+        {
+          'featureType': 'road.arterial',
+          'elementType': 'labels',
+          'stylers': [{'visibility': 'off'}]
+        }
+      ]
+    };
+    var logo = '<img src=\'img/icons/cepave-start.svg\' alt=\'cepave\' width=\'120\'>';
+    var contentString =
+      '<div id=\'CONTENTMAPSS\'>' +
+        '<div class=\'site-notice\'>' +
+        '網路銀河探險基地' +
+        '</div>' +
+        '<div class=\'headline-fouri\'>' +
+        logo +
+        '</h1>' +
+        '<div class=\'body-ontent\'>'+
+        '<p>' +'100台北市中正區忠孝東路一段9號5樓'+
+        '</p>' +
+        '</div>' +
+      '</div>';
+
+    map = new google.maps.Map(document.getElementById('map-wrapper'), mapOptions);
+    var image = 'img/icons/i--location--primary.svg';
+    var myLatLng = new google.maps.LatLng( 25.0449856, 121.5213585);
+    var beachMarker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image,
+      size: 50
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString
+    });
+
+    google.maps.event.addListener(beachMarker, 'click', function() {
+      infowindow.open(map,beachMarker);
+    });
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);

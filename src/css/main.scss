@@ -17,6 +17,14 @@
 
 @import '_components/_covers/_common';
 
+// page > about
+@import '_components/_about/_common';
+@import '_components/_about/_02';
+@import '_components/_about/_03';
+@import '_components/_about/_04';
+@import "_components/_about/_common";
+@import "_components/_covers/_about";
+
 // page > team
 @import '_components/_team/_common';
 @import '_components/_team/_02';
@@ -33,5 +41,4 @@
 @import '_components/_contact/_contact';
 
 @import '_layout/_header/_navigation_bar';
-
 // == END OF CEPAVE CSS ==

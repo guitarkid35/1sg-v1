@@ -1,9 +1,18 @@
 .about-02 {
   position: relative;
-  background:linear-gradient(top, rgba(76,106,255,0) 0%, rgba(76,106,255,1) 40%, rgba(76,106,255,1) 100%);
-  padding-bottom: 420px;
+  padding-bottom: 240px;
   min-height: 1px;
   text-align: center;
+  background-color: $color-blue-dark; 
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 240px;
+    width: 100%;
+    bottom: 100%;
+    background:linear-gradient(top, rgba($color-blue-dark,0) 0%, rgba($color-blue-dark,1) 100%);
+  }
   @media (#{$max_phones}){
     padding: 50px 0;
   }
@@ -16,6 +25,9 @@
     }
     &__text {
       color: $white;
+    }
+    &__img {
+      margin: 32px 0;
     }
   }
 }
@@ -56,8 +68,8 @@ $_cultures_smaller: 'max-width: 600px';
 .about__culture_title {
   @include font_loader($montserrat, 5, 'n');
   color: $white;
-  padding: 24px 80px ;
-  font-size: 20px;
+  padding: 20px 80px ;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   &:after {
@@ -71,9 +83,11 @@ $_cultures_smaller: 'max-width: 600px';
     transition: background-color .4s ease;
   }
   @media (#{$_cultures_smaller}){
-    font-size: 16px;
+    font-size: 14px;
   }
 }
+
+
 .about__culture_text_box {
   display: none;
 }

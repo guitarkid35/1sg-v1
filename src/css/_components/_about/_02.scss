@@ -8,7 +8,7 @@
     content: '';
     display: block;
     position: absolute;
-    height: 240px;
+    height: 200px;
     width: 100%;
     bottom: 100%;
     background:linear-gradient(top, rgba($color-blue-dark,0) 0%, rgba($color-blue-dark,1) 100%);
@@ -24,10 +24,21 @@
       color: $white;
     }
     &__text {
+      @include font_loader($montserrat, 2, 'n');
+      display: block;
+      margin: auto;
+      font-size: 16px;
       color: $white;
+      @media (#{$max_tablets}){
+        padding: 0 40px;
+      }
+      @media (#{$max_phones}){
+        font-size: 14px;
+        padding: 0 20px;
+      }
     }
     &__img {
-      margin: 32px 0;
+      margin: 32px;
     }
   }
 }
@@ -36,11 +47,12 @@ $_cultures_smaller: 'max-width: 600px';
 
 .about__culture_box {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 24px;
   @media (#{$max_phones}){
     margin-bottom: 20px;
   }
 }
+
 .about__culture_item {
   display: inline-block;
   position: relative;
@@ -51,20 +63,30 @@ $_cultures_smaller: 'max-width: 600px';
       opacity: 1;
     }
     .about__culture_title:after {
-      background-color: $white;
+      background-color: $color-yellow;
     }
   }
   @media (#{$max_tablets}){
+    width: 100 / 4 * 1%;
     margin: 0 10px;
   }
   @media (#{$_cultures_smaller}){
+    width: 100 / 4 * 1%;
     margin: 0;
   }
   @media (#{$max_phones}){
-    width: 49%;
+    width: 100 / 4 * 1%;
     margin-bottom: 20px;
   }
 }
+
+.about-container{
+  height: 240px;
+  @media (#{$max_phones}){
+      height: 400px;
+  }
+}
+
 .about__culture_title {
   @include font_loader($montserrat, 5, 'n');
   color: $white;
@@ -80,13 +102,17 @@ $_cultures_smaller: 'max-width: 600px';
     z-index: 1;
     width: 100%;
     height: 2px;
-    transition: background-color .4s ease;
+    transition: background-color .8s ease;
+  }
+  @media (#{$max_tablets}){
+    font-size: 14px;
+    padding: 20px ;
   }
   @media (#{$_cultures_smaller}){
     font-size: 14px;
+    padding: 20px ;
   }
 }
-
 
 .about__culture_text_box {
   display: none;

@@ -76,9 +76,13 @@ $brand-width: $brand-height;
 		text-decoration: none;
 		color: $color-primary;
 	}
+	&:hover {
+		cursor: pointer;
+	}
 	&.state-active {
-		cursor: default;
-		color: $color-primary;
+		&:hover {
+			cursor: default;
+		}
 	}
 	// &--white:before {
 	// 	background-color: white;

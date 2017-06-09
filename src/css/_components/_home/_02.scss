@@ -1,0 +1,46 @@
+.team-02 {
+  position: relative;
+  background: $white;
+  padding-bottom: 120px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background-image: url('../img/half-oval.svg');
+    background-size: cover;
+    background-position-x: center;
+    bottom: 100%;
+  }
+  @media (#{$max_phones}){
+    padding: 50px 0;
+  }
+  .team {
+    &__item {
+      text-align: center;
+      &_img {
+        margin-bottom: 28px;
+      }
+      &_title {
+        @include font_loader($montserrat, 4, 'n');
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: $color-gray-darker;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        margin-bottom: 24px;
+      }
+      &_text {
+        @include font_loader($montserrat, 1, 'n');
+        display: block;
+        margin: auto;
+        font-size: 14px;
+        color: $color-gray;
+        // .col-lg-3 & { 
+        //   width: 90%;
+        // }
+      }
+    }
+  }
+}

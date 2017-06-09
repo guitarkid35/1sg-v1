@@ -17,6 +17,12 @@
 
 @import '_components/_covers/_common';
 
+// page > home
+@import '_components/_home/_common';
+@import '_components/_home/_02';
+@import '_components/_home/_03';
+@import "_components/_covers/_home";
+
 // page > about
 @import '_components/_about/_common';
 @import '_components/_about/_02';

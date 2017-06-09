@@ -1,0 +1,53 @@
+//team  cover specific styles
+.cover--team {
+	overflow: hidden; //to crop the ipad pic
+}
+.cover__title--team {
+	margin-top: 160px;
+	margin-bottom: 36px;
+	// text-align: center;
+	color: $white;
+
+	@media (#{$max_phones}){
+		margin-top: 100px;
+	}
+}
+.cover__title_text--team {
+
+	@include font_loader($playfair, 7, 'n');
+
+	font-size: 48px;
+	@media (#{$max_tablets--landscape}){
+		font-size: 36px;
+	}
+	@media (#{$max_tablets}){
+		font-size: 28px;
+	}
+	@media (#{$max_phones}){
+		font-size: 24px;
+	}
+}
+.cover__description_text--team {
+	color: $white;
+	font-size: 16px;
+}
+.cover__button_box--team {
+	margin-top: 60px;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		margin-top: 40px;
+	}
+}
+.cover__image_box--team {
+	margin: 65px auto 0;
+
+	max-width: 799px;
+
+	text-align: center;
+
+	@media (#{$max_phones}){
+		margin-top: 45px;
+	}
+}

@@ -7,7 +7,7 @@ var size         = require('gulp-size'); //shows the size of the entire project 
 var autoprefixer = require('gulp-autoprefixer');
 var imagemin     = require('gulp-imagemin');
 var pngquant     = require('imagemin-pngquant');
-var jade         = require('gulp-jade');
+var pug          = require('gulp-pug');
 var base64       = require('gulp-base64');
 var concat       = require('gulp-concat');
 var argv         = require('yargs').argv;
@@ -65,11 +65,11 @@ gulp.task('main_js', function() {
 		.pipe(gulp.dest('build/js'));
 });
 
-// Jade
-gulp.task('jade', function(){
-	gulp.src(['src/templates/**.jade'])
+// pug
+gulp.task('pug', function(){
+	gulp.src(['src/templates/**.pug'])
 		.pipe(plumber())
-		.pipe(jade({
+		.pipe(pug({
 			pretty: true
 		}))
 		.pipe(gulp.dest('build/'));
@@ -100,16 +100,16 @@ gulp.task('compress_img', function() {
 });
 
 gulp.task('dev:watch', function () {
-	gulp.watch('src/templates/**', ['jade']),
+	gulp.watch('src/templates/**', ['pug']),
 	gulp.watch('src/css/**', ['css']),
 	gulp.watch('src/js/main.js', ['main_js']),
 	gulp.watch('src/img/**',['compress_img']);
 });
 
-gulp.task('serve', ['css', 'main_js', 'compress_img', 'jade', 'browser-sync'], function () {
-  gulp.watch('src/templates/**', ['jade']),
+gulp.task('serve', ['css', 'main_js', 'compress_img', 'pug', 'browser-sync'], function () {
+  gulp.watch('src/templates/**', ['pug']),
 	gulp.watch('src/css/**', ['css']),
 	gulp.watch('src/js/main.js', ['main_js']),
 	gulp.watch('src/img/**',['compress_img']);
 });
-gulp.task('compile', ['css', 'main_js', 'compress_img', 'jade']);
+gulp.task('compile', ['css', 'main_js', 'compress_img', 'pug']);

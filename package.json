@@ -21,7 +21,7 @@
     "gulp-concat": "^2.5.2",
     "gulp-file-include": "^0.13.5",
     "gulp-imagemin": "^2.4.0",
-    "gulp-jade": "^1.1.0",
+    "gulp-pug": "^2.0.0",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^5.1.8",
     "gulp-rename": "^1.2.2",

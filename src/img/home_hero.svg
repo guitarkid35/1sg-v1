@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2560px" height="860px" viewBox="0 0 2560 860" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>home_hero</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="2560" height="860"></rect>
+        <rect id="path-3" x="0" y="0" width="2560" height="860"></rect>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#000526" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000526" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="0" y="0" width="970" height="530" rx="8"></rect>
+        <filter x="-9.3%" y="-15.1%" width="116.5%" height="130.2%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0.278431373  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="-10" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0.278431373  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-9" x="0" y="40" width="970" height="50"></rect>
+        <filter x="-0.5%" y="-8.0%" width="101.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home_hero">
+            <g id="hero">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="bg" fill="#4C6AFF" xlink:href="#path-1"></use>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="@@"></g>
+                <rect id="Scrim" fill="url(#linearGradient-5)" mask="url(#mask-4)" x="0" y="0" width="2560" height="860" rx="3"></rect>
+                <g id="Group-2" mask="url(#mask-4)">
+                    <g transform="translate(0.000000, 387.000000)" id="Path-2">
+                        <path d="M4.44319021,159 C4.44319021,159 224.276985,124 671.035988,195 C1117.79499,266 1417.40718,321 1791.4792,237 C2165.55122,153 2557.35178,0 2557.35178,0 L2559.12463,473 L0.875369344,473 L4.44319021,159 Z" fill="#FF566D" style="mix-blend-mode: hard-light;"></path>
+                        <path d="M3.55676362,393 C3.55676362,393 223.390559,120.984937 579.734049,218.984937 C936.077539,316.984937 1490.98059,251.984937 1863.27976,233.984937 C2235.57892,215.984937 2556.46535,435 2556.46535,435 L2556.46535,473 L3.53464912,473 L3.55676362,393 Z" fill="#FFC725" style="mix-blend-mode: hard-light;" transform="translate(1280.000000, 335.344200) scale(-1, 1) translate(-1280.000000, -335.344200) "></path>
+                        <path d="M3.55676362,163.984937 C3.55676362,163.984937 209.207733,278 661.285295,276 C1113.36286,274 1567.21327,472 1943.05815,371 C2318.90302,270 2556.46535,252.984937 2556.46535,252.984937 L2556.46535,473 L3.53464912,473 L3.55676362,163.984937 Z" fill="#47AAFF" style="mix-blend-mode: hard-light;" transform="translate(1280.000000, 318.492469) scale(-1, 1) translate(-1280.000000, -318.492469) "></path>
+                    </g>
+                </g>
+                <g id="spots-left" mask="url(#mask-4)">
+                    <g transform="translate(680.000000, 209.000000)">
+                        <circle id="Oval-5" fill="#7A6EFF" cx="146" cy="44" r="8"></circle>
+                        <circle id="Oval-5-Copy-3" fill="#FFDD27" cx="8" cy="8" r="8"></circle>
+                        <circle id="Oval-5-Copy" fill="#FFDE26" cx="202" cy="36" r="16"></circle>
+                        <circle id="Oval-5-Copy-2" fill="#32BEFF" cx="90" cy="92" r="16"></circle>
+                        <circle id="Oval-6" fill="#1DEA7F" cx="260" cy="92" r="8"></circle>
+                        <circle id="Oval-6-Copy-2" fill="#FF557F" cx="202" cy="144" r="8"></circle>
+                        <circle id="Oval-6-Copy" fill="#1DEA7F" cx="54" cy="184" r="8"></circle>
+                    </g>
+                </g>
+                <g id="spots-right" mask="url(#mask-4)">
+                    <g transform="translate(1746.000000, 305.000000) scale(-1, 1) translate(-1746.000000, -305.000000) translate(1612.000000, 209.000000)">
+                        <circle id="Oval-5" fill="#7A6EFF" cx="146" cy="44" r="8"></circle>
+                        <circle id="Oval-5-Copy-3" fill="#FFDD27" cx="8" cy="8" r="8"></circle>
+                        <circle id="Oval-5-Copy" fill="#FFDE26" cx="202" cy="36" r="16"></circle>
+                        <circle id="Oval-5-Copy-2" fill="#32BEFF" cx="90" cy="92" r="16"></circle>
+                        <circle id="Oval-6" fill="#1DEA7F" cx="260" cy="92" r="8"></circle>
+                        <circle id="Oval-6-Copy-2" fill="#FF557F" cx="202" cy="144" r="8"></circle>
+                        <circle id="Oval-6-Copy" fill="#1DEA7F" cx="54" cy="184" r="8"></circle>
+                    </g>
+                </g>
+                <g id="app" mask="url(#mask-4)">
+                    <g transform="translate(795.000000, 410.000000)">
+                        <g id="background">
+                            <mask id="mask-7" fill="white">
+                                <use xlink:href="#path-6"></use>
+                            </mask>
+                            <g id="Rectangle-4">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-6"></use>
+                                <use fill="#F3F8FB" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            </g>
+                            <rect id="Rectangle-11" fill="#FFFFFF" mask="url(#mask-7)" x="0" y="39.005291" width="205.291005" height="418.793651"></rect>
+                            <g id="Rectangle-9" mask="url(#mask-7)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-9"></use>
+                            </g>
+                            <rect id="Rectangle-5" fill="#F1F4F8" mask="url(#mask-7)" x="72.8783069" y="3.07936508" width="667.195767" height="24.6349206"></rect>
+                        </g>
+                        <g id="Browser">
+                            <path d="M5.13227513,0 L964.867725,0 C967.701767,0 970,2.238 970,4.999 L970,40 L0,40 L0,4.999 C0,2.238 2.2982328,0 5.13227513,0 L5.13227513,0 Z" id="Shape" fill="#F9F8F8"></path>
+                            <g id="Browser-buttons" transform="translate(15.396825, 16.423280)">
+                                <g id="Group">
+                                    <circle id="Oval" fill="#FF0030" cx="4.10582011" cy="4.10582011" r="4.10582011"></circle>
+                                    <circle id="Oval" fill="#F4E609" cx="20.5291005" cy="4.10582011" r="4.10582011"></circle>
+                                    <circle id="Oval" fill="#95E40B" cx="35.9259259" cy="4.10582011" r="4.10582011"></circle>
+                                </g>
+                            </g>
+                            <g id="Menu" transform="translate(949.470899, 12.317460)" fill="#323C47">
+                                <path d="M1.53968254,9.23706878 C0.689777778,9.23706878 0,8.54831746 0,7.6984127 C0,6.84748148 0.689777778,6.15873016 1.53968254,6.15873016 C2.3895873,6.15873016 3.07936508,6.84748148 3.07936508,7.6984127 C3.07936508,8.54831746 2.3895873,9.23706878 1.53968254,9.23706878 L1.53968254,9.23706878 Z M1.53968254,3.07936508 C0.689777778,3.07936508 0,2.3895873 0,1.53968254 C0,0.688751323 0.689777778,0 1.53968254,0 C2.3895873,0 3.07936508,0.688751323 3.07936508,1.53968254 C3.07936508,2.3895873 2.3895873,3.07936508 1.53968254,3.07936508 L1.53968254,3.07936508 Z M1.53968254,12.3174603 C2.3895873,12.3174603 3.07936508,13.0072381 3.07936508,13.8571429 C3.07936508,14.7070476 2.3895873,15.3968254 1.53968254,15.3968254 C0.689777778,15.3968254 0,14.7070476 0,13.8571429 C0,13.0072381 0.689777778,12.3174603 1.53968254,12.3174603 L1.53968254,12.3174603 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

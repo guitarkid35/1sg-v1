@@ -1,18 +1,18 @@
-//team  cover specific styles
-.cover--team {
+//home  cover specific styles
+.cover--home {
 	overflow: hidden; //to crop the ipad pic
 }
-.cover__title--team {
+.cover__title--home {
 	margin-top: 160px;
 	margin-bottom: 36px;
-	// text-align: center;
+	text-align: center;
 	color: $white;
 
 	@media (#{$max_phones}){
 		margin-top: 100px;
 	}
 }
-.cover__title_text--team {
+.cover__title_text--home {
 
 	@include font_loader($playfair, 7, 'n');
 
@@ -27,20 +27,22 @@
 		font-size: 24px;
 	}
 }
-.cover__description_text--team {
+.cover__description_box--home{
+	text-align: center;
+}
+.cover__description_text--home {
 	color: $white;
 	font-size: 16px;
 }
-.cover__button_box--team {
+.cover__button_box--home {
 	margin-top: 60px;
-
 	text-align: center;
 
 	@media (#{$max_phones}){
 		margin-top: 40px;
 	}
 }
-.cover__image_box--team {
+.cover__image_box--home {
 	margin: 65px auto 0;
 
 	max-width: 799px;

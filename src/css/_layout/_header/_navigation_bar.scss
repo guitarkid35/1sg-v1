@@ -23,10 +23,15 @@
   @media (#{$max_tablets}) {
     display: none;
   }
-  &.is-scroll {
+  &.is-default {
     &:before {
-      content: '';
-      display: block;
+      height: 70px;
+      background-color: $white;
+      box-shadow: 0 2px 4px rgba($black, .1);
+    }
+  }
+  &.is-show {
+    &:before {
       height: 70px;
       background-color: $white;
       box-shadow: 0 2px 4px rgba($black, .1);

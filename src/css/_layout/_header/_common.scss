@@ -16,24 +16,25 @@
   position: relative;
   z-index: 1;
 }
-.header__logo_box  {
+.header__logo_box {
   margin-top: 12px;
   display: inline-block;
   overflow: hidden;
 }
 $brand-height: 46px;
 $brand-width: $brand-height;
-.header__logo_img  {
+.header__logo_img {
   display: block;
   width: $brand-width;
   height: $brand-height;
   background-image: url(../img/etc/logo--circle--white.svg);
   float: left;
-  .is-scroll & {
+  .is-show &,
+  .is-default & {
     background-image: url(../img/etc/logo--circle--color.svg);
   }
 }
-.header__logo_text  {
+.header__logo_text {
   display: block;
   width: 132px;
   height: $brand-height;
@@ -41,7 +42,8 @@ $brand-width: $brand-height;
   background-image: url(../img/etc/logo--text--white.svg);
   background-size: cover;
   float: left;
-  .is-scroll & {
+  .is-show &,
+  .is-default & {
     background-image: url(../img/etc/logo--text--color.svg);
   }
 }
@@ -61,7 +63,8 @@ $brand-width: $brand-height;
   position: relative;
   font-size: 14px;
   line-height: 16px;
-  .is-scroll & {
+  .is-show &,
+  .is-default & {
     color: $color-gray;
   }
   &:first-letter {
@@ -76,7 +79,8 @@ $brand-width: $brand-height;
     bottom: 0;
     background-color: $white;
     transition: width .4s cubic-bezier(0.1, 0.88, 0.25, 1);
-    .is-scroll & {
+    .is-show &,
+    .is-default & {
       background-color: $color-primary;
     }
   }
@@ -87,7 +91,8 @@ $brand-width: $brand-height;
     }
     text-decoration: none;
     color: $white;
-    .is-scroll & {
+    .is-show &,
+    .is-default & {
       color: $color-primary;
     }
   }

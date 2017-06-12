@@ -48,13 +48,16 @@ $brand-width: $brand-height;
 }
 .header__menu_link {
 	display: inline-block;
-	color: $color-gray;
+	color: $white;
 	padding: 27px 16px;
 	@include clear_link;
-	@include font_loader($montserrat, 5, 'n');
+	@include font_loader($montserrat, 4, 'n');
 	position: relative;
 	font-size: 14px;
 	line-height: 16px;
+	.is-scroll & {
+		color: $color-gray;
+	}
 	&:first-letter {
 		text-transform: uppercase;
 	}

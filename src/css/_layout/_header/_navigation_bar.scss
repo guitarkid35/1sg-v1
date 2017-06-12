@@ -1,8 +1,8 @@
 //this component is used for easier navigation and is not a part of the tool. Yet, you still can use it in your projects if you want.
 .page_wrapper--presentation-navbar {
-  @media (#{$min_tablets}) {
-    padding-top: 70px;
-  }
+  // @media (#{$min_tablets}) {
+  //   padding-top: 70px;
+  // }
 }
 .navigation_bar {
   position: fixed;

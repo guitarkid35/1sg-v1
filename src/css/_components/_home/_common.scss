@@ -6,10 +6,19 @@
   @media (#{$max_phones})  {
     padding: 50px 0 70px;
   }
+  .container {
+    max-width: 1170px;
+    padding-right: 0;
+    padding-left: 0;
+  }
   &__row {
     @extend .container-fluid;
     position: relative;
-    max-width: 1140px;
+    max-width: 1170px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   &__title-box {
     margin-bottom: 60px;
@@ -36,4 +45,3 @@
     max-width: 80%;
   }
 }
-

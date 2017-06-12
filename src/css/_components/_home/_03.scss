@@ -5,17 +5,19 @@
   @media (#{$max_phones}){
     padding: 50px 0;
   }
+  &-left {
+    padding-right: 45px;
+  }
   .home {
     &__textbox {
-      padding: 0 28px;
       text-align: left;
       &_title {
         @include font_loader($montserrat, 4, 'n');
         margin-bottom: 48px;
         font-size: 36px;
+        line-height: 54px;
         color: $white;
         text-transform: uppercase;
-        letter-spacing: .05em;
       }
       &_text {
         @include font_loader($montserrat, 1, 'n');
@@ -23,14 +25,22 @@
         margin: auto;
         font-size: 14px;
         color: $white;
-        // .col-lg-3 & { 
+        margin-bottom: 1em;
+        // .col-lg-3 & {
         //   width: 90%;
         // }
       }
     }
     &__item {
       text-align: left;
-      border: 1px $white solid;
+      padding: 28px;
+      background: $white;
+      box-shadow: 0 4px 12px 0 rgba(0,0,71,0.2);
+      border-radius: 4px;
+      &:hover {
+        box-shadow: 0 8px 48px 0 rgba(0,0,71,0.4);
+        transition: box-shadow .75s;
+      }
       &_img {
         margin-bottom: 28px;
       }
@@ -48,10 +58,25 @@
         display: block;
         margin: auto;
         font-size: 14px;
-        color: $white;
-        // .col-lg-3 & { 
+        line-height: 22px;
+        color: $color-gray;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid $color-gray-lighter;
+        border-bottom: 1px solid $color-gray-lighter;
+        // .col-lg-3 & {
         //   width: 90%;
         // }
+      }
+      &_btn {
+        background-image: linear-gradient(-90deg, #31DAFF 0%, #538DFF 100%);
+        border-radius: 4px;
+        display: block;
+        font-size: 14px;
+        line-height: 50px;
+        text-align: center;
+        color: $white;
+        margin-top: 28px;
       }
     }
   }

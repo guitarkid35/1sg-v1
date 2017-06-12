@@ -10,8 +10,9 @@ var pngquant     = require('imagemin-pngquant');
 var jade         = require('gulp-jade');
 var base64       = require('gulp-base64');
 var concat       = require('gulp-concat');
-var argv        = require('yargs').argv;
+var argv         = require('yargs').argv;
 var uglify       = require('gulp-uglify');
+var sourcemaps   = require('gulp-sourcemaps');
 
 //gulp stuff (no watch breaking on errors)
 var plumber      = require('gulp-plumber');
@@ -29,6 +30,7 @@ gulp.task('browser-sync', function() {
 // css
 gulp.task('css', function() {
 	gulp.src('src/css/main.scss')
+		.pipe(sourcemaps.init())
 		.pipe(plumber())
 		//.pipe(sass({outputStyle: ''})
 		.pipe(sass({outputStyle: 'expanded'})
@@ -45,6 +47,7 @@ gulp.task('css', function() {
 			cascade: false
 		}))
 		.pipe(size())
+		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('build/css'));
 });
 

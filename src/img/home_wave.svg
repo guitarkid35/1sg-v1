@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2560px" height="374px" viewBox="0 0 2560 374" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>home_wave</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home_wave">
+            <path d="M0,126 C0,126 223.554501,98.0465116 670.619243,154.186047 C1117.68399,210.325581 1417.50121,253.813953 1791.82923,187.395349 C2166.15725,120.976744 2560,0 2560,0 L2560,374 L0,374 L0,126 Z" id="Path-2" fill="#00D4BE" opacity="0.6"></path>
+            <path d="M2559.97782,310.653596 C2559.97782,310.653596 2339.53529,95.2638933 1982.20505,172.863239 C1624.87481,250.462584 1068.43519,198.99363 695.10509,184.740689 C321.77499,170.487749 0,343.910458 0,343.910458 L0,374 L2560,374 L2559.97782,310.653596 Z" id="Path-2" fill="#FFC725"></path>
+            <path d="M0.0221757342,65 C0.0221757342,65 206.242612,179.009505 659.572018,177.009603 C1112.90142,175.0097 1568.00859,373.000049 1944.89422,272.004972 C2321.77984,171.009895 2560,153.995662 2560,153.995662 L2560,374 L0,374 L0.0221757342,65 Z" id="Path-2" fill="#4C6AFF" transform="translate(1280.000000, 219.500000) scale(-1, 1) translate(-1280.000000, -219.500000) "></path>
+        </g>
+    </g>
+</svg>

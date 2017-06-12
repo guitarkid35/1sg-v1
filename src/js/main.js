@@ -2,7 +2,22 @@
 window.addEventListener('DOMContentLoaded', function (){
   'use strict';
 
+  // Start OF: Scroll show/hide navbar  =====
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 70) {
+      hideNav();
+    } else {
+      showNav();
+    }
+  });
 
+  function hideNav() {
+    $("[data-nav-status='toggle']").addClass('is-scroll');
+  };
+  function showNav() {
+    $("[data-nav-status='toggle']").removeClass('is-scroll');
+  };
+  // END OF: Scroll show/hide navbar  =====
 
   // START OF: webfont loader  =====
   var fonts = (function(){

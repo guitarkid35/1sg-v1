@@ -19,10 +19,7 @@
     left: 0;
     right: 0;
     top: 0;
-    transition: height .3s;
   }
-  // background-color: $white;
-  // box-shadow: 0 2px 4px rgba($black, .1);
   @media (#{$max_tablets}) {
     display: none;
   }
@@ -33,7 +30,7 @@
       height: 70px;
       background-color: $white;
       box-shadow: 0 2px 4px rgba($black, .1);
-      transition: height .3s;
+      transition: height .3s cubic-bezier(.0, .0, 1, 1);
     }
   }
 }

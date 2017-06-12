@@ -27,17 +27,23 @@ $brand-width: $brand-height;
 	display: block;
 	width: $brand-width;
 	height: $brand-height;
-	background-image: url(../img/etc/logo--circle--color.svg);
+	background-image: url(../img/etc/logo--circle--white.svg);
 	float: left;
+	.is-scroll & {
+		background-image: url(../img/etc/logo--circle--color.svg);
+	}
 }
 .header__logo_text  {
 	display: block;
 	width: 132px;
 	height: $brand-height;
 	color: transparent;
-	background-image: url(../img/etc/logo--text--color.svg);
+	background-image: url(../img/etc/logo--text--white.svg);
 	background-size: cover;
 	float: left;
+	.is-scroll & {
+		background-image: url(../img/etc/logo--text--color.svg);
+	}
 }
 .header__menu_list {
 	@include clear_list;

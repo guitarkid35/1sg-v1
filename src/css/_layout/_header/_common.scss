@@ -54,7 +54,7 @@ $brand-width: $brand-height;
 }
 .header__menu_link {
   display: inline-block;
-  color: $white;
+  color: rgba($white, .5);
   padding: 27px 16px;
   @include clear_link;
   @include font_loader($montserrat, 4, 'n');
@@ -74,8 +74,11 @@ $brand-width: $brand-height;
     height: 4px;
     left: 0;
     bottom: 0;
-    background-color: $color-primary;
+    background-color: $white;
     transition: width .4s cubic-bezier(0.1, 0.88, 0.25, 1);
+    .is-scroll & {
+      background-color: $color-primary;
+    }
   }
   &:hover,
   &.state-active {
@@ -83,7 +86,10 @@ $brand-width: $brand-height;
       width: 100%;
     }
     text-decoration: none;
-    color: $color-primary;
+    color: $white;
+    .is-scroll & {
+      color: $color-primary;
+    }
   }
   &:hover {
     cursor: pointer;

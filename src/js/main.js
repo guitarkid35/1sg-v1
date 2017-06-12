@@ -2,23 +2,6 @@
 window.addEventListener('DOMContentLoaded', function (){
   'use strict';
 
-  // Start OF: Scroll show/hide navbar  =====
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 70) {
-      hideNav();
-    } else {
-      showNav();
-    }
-  });
-
-  function hideNav() {
-    $("[data-nav-status='toggle']").addClass('is-scroll');
-  };
-  function showNav() {
-    $("[data-nav-status='toggle']").removeClass('is-scroll');
-  };
-  // END OF: Scroll show/hide navbar  =====
-
   // START OF: webfont loader  =====
   var fonts = (function(){
     var families = ['Playfair+Display:400,400italic,700,700italic:latin', 'Montserrat:700,400:latin'];
@@ -35,6 +18,46 @@ window.addEventListener('DOMContentLoaded', function (){
     }
   }());
   // ===== END OF: webfont loader
+
+  // Start OF: Scroll show/hide navbar  =====
+  var navigation = (function(){
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll > 70) {
+      defaultNav();
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 70) {
+          defaultNav();
+        } else {
+          hideNav();
+          removedefaultNav();
+        }
+      });
+    } else {
+      removedefaultNav();
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 70) {
+          showNav();
+        } else {
+          hideNav();
+          removedefaultNav();
+        }
+      });
+    }
+    function showNav() {
+      $("[data-nav-status='toggle']").addClass('is-show');
+    };
+    function hideNav() {
+      $("[data-nav-status='toggle']").removeClass('is-show');
+    };
+    function defaultNav() {
+      $("[data-nav-status='toggle']").addClass('is-default');
+    };
+    function removedefaultNav() {
+      $("[data-nav-status='toggle']").removeClass('is-default');
+    };
+
+  }());
+  // END OF: Scroll show/hide navbar  =====
 
   // START OF: filterizr =====
   var filterizr = (function(){
@@ -113,6 +136,18 @@ window.addEventListener('DOMContentLoaded', function (){
   // ===== END OF: content changer
 
   fonts.load();
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      clearTimeout(timeout);
+      timeout = setTimeout(func, wait);
+    };
+  };
+  function realFunc(){
+    navigation;
+  }
+  window.addEventListener('scroll',debounce(realFunc,500));
+  window.addEventListener('scroll',realFunc);
   contentChanger.bind();
   if($('.filtr-container').length > 0){
     filterizr.init();

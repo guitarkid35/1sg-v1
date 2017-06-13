@@ -15,8 +15,6 @@
 
 @import '_components/_button';
 
-@import '_components/_covers/_common';
-
 // page
 @import '_components/_page-common';
   // > home
@@ -25,26 +23,22 @@
   @import '_components/_home/_03';
   @import '_components/_home/_04';
   @import '_components/_home/_05';
-  @import "_components/_covers/_home";
 
   // > about
   @import '_components/_about/_common';
   @import '_components/_about/_02';
   @import '_components/_about/_03';
   @import '_components/_about/_04';
-  @import "_components/_covers/_about";
 
   // > team
   @import '_components/_team/_common';
   @import '_components/_team/_02';
   @import '_components/_team/_03';
-  @import '_components/_covers/_team';
 
   // > hireing
   @import '_components/_hireing/_common';
   @import '_components/_hireing/_02';
   @import '_components/_hireing/_03';
-  @import "_components/_covers/_hireing";
 
   // > contact
   @import '_components/_contact/_contact';

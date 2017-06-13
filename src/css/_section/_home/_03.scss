@@ -55,9 +55,9 @@
         border-radius: 4px;
         padding: 48px 24px 24px;
         background: $white;
-        box-shadow: 0 4px 12px rgba( $color-blue-darker, 0.2);
+        box-shadow: $shadow2;
         &:hover {
-          box-shadow: 0 8px 48px 0 rgba(0,0,71,0.4);
+          box-shadow: $shadow4-hover;
           transition: box-shadow .75s;
         }
         @media (#{$max_phones}){

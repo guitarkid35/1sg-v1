@@ -12,6 +12,7 @@
     background-size: cover;
     background-position-x: center;
     bottom: 100%;
+    pointer-events: none;
   }
   @media (#{$max_phones}){
     padding: 50px 0;
@@ -36,12 +37,16 @@
         border-bottom: 4px $color-yellow  solid;
         border-radius: 4px;
         background: $white;
-        box-shadow: 0 4px 12px rgba( $color-blue-darker, 0.2);
+        box-shadow: $shadow2-hover;
+        &:hover {
+          box-shadow: $shadow4-hover;
+          transition: box-shadow .75s;
+        }
       }
       &_img {
         width: 100%;
         border-radius: 4px 4px 0 0;
-        display: block; 
+        display: block;
         margin-bottom: 24px;
       }
       &_text {

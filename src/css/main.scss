@@ -17,35 +17,37 @@
 
 @import '_components/_covers/_common';
 
-// page > home
-@import '_components/_home/_common';
-@import '_components/_home/_02';
-@import '_components/_home/_03';
-@import '_components/_home/_04';
-@import '_components/_home/_05';
-@import "_components/_covers/_home";
+// page
+@import '_components/_page-common';
+  // > home
+  @import '_components/_home/_common';
+  @import '_components/_home/_02';
+  @import '_components/_home/_03';
+  @import '_components/_home/_04';
+  @import '_components/_home/_05';
+  @import "_components/_covers/_home";
 
-// page > about
-@import '_components/_about/_common';
-@import '_components/_about/_02';
-@import '_components/_about/_03';
-@import '_components/_about/_04';
-@import "_components/_covers/_about";
+  // > about
+  @import '_components/_about/_common';
+  @import '_components/_about/_02';
+  @import '_components/_about/_03';
+  @import '_components/_about/_04';
+  @import "_components/_covers/_about";
 
-// page > team
-@import '_components/_team/_common';
-@import '_components/_team/_02';
-@import '_components/_team/_03';
-@import '_components/_covers/_team';
+  // > team
+  @import '_components/_team/_common';
+  @import '_components/_team/_02';
+  @import '_components/_team/_03';
+  @import '_components/_covers/_team';
 
-// page > hireing
-@import '_components/_hireing/_common';
-@import '_components/_hireing/_02';
-@import '_components/_hireing/_03';
-@import "_components/_covers/_hireing";
+  // > hireing
+  @import '_components/_hireing/_common';
+  @import '_components/_hireing/_02';
+  @import '_components/_hireing/_03';
+  @import "_components/_covers/_hireing";
 
-// page > contact
-@import '_components/_contact/_contact';
+  // > contact
+  @import '_components/_contact/_contact';
 
 @import '_layout/_header/_navigation_bar';
 // == END OF CEPAVE CSS ==

@@ -38,6 +38,18 @@ $stone              : #f6f6f6;
 $mars               : #f84b29;
 $grass              : #21d593;
 
+// shadow
+$shadow1: 0 2px 4px rgba( $color-blue-darker, 0.2);
+$shadow2: 0 4px 8px rgba( $color-blue-darker, 0.2);
+$shadow3: 0 6px 12px rgba( $color-blue-darker, 0.2);
+$shadow4: 0 8px 24px rgba( $color-blue-darker, 0.2);
+$shadow5: 0 12px 32px rgba( $color-blue-darker, 0.2);
+$shadow1-hover: 0 2px 8px rgba( $color-blue-darker, 0.4);
+$shadow2-hover: 0 4px 16px rgba( $color-blue-darker, 0.4);
+$shadow3-hover: 0 6px 24px rgba( $color-blue-darker, 0.4);
+$shadow4-hover: 0 8px 48px rgba( $color-blue-darker, 0.4);
+$shadow5-hover: 0 12px 96px rgba( $color-blue-darker, 0.4);
+
 //media queries (notice: there are some local media queries starting with the underscore char: $_scaling_range)
   //aspect ratios:
 $rect_aspect_ratio: 'min-aspect-ratio: 6/10';

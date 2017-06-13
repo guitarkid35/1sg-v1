@@ -1,0 +1,19 @@
+block vars
+  - var lang            = 'zh-Hant-TW'
+  - var pageTitle       = 'cepave'
+  - var pageDescription = 'Description'
+
+doctype html
+html(lang=lang class='no-js')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title #{ pageTitle }
+    meta(name='description', content=pageDescription)
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='icon', type='image/x-icon', href='img/favicons/favicon.png')
+    link(href="//fonts.googleapis.com/css?family=Montserrat:100,400,500,700,900", rel="stylesheet")
+    link(rel="stylesheet", href="css/main.css")
+  main.page_wrapper.page_wrapper--presentation-navbar
+    block content
+    script(src="js/main.js", defer)

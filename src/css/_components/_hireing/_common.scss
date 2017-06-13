@@ -1,7 +1,7 @@
 .hireing {
-  @extend .page;
+  @extend .section;
   &__row {
-    @extend .page-row;
+    @extend .section-row;
     // @extend .container-fluid;
     // padding: 0;
     // // max-width: 1140px;

@@ -1,8 +1,8 @@
 .about {
-  @extend .page;
+  @extend .section;
   background-color: transparent;
   &__row {
-    @extend .page-row;
+    @extend .section-row;
   }
   &__title-box {
     @extend .title-box;
@@ -18,4 +18,3 @@
     max-width: 80%;
   }
 }
-

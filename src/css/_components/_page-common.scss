@@ -83,7 +83,7 @@
 }
 
 // section block
-.page {
+.section {
   padding: 80px 0;
   text-align: center;
   background-color: $color-gray-ligtest;
@@ -97,7 +97,7 @@
     padding-left: 0;
   }
 }
-.page-row {
+.section-row {
   @extend .container-fluid;
   position: relative;
   max-width: 1170px;

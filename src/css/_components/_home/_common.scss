@@ -1,7 +1,7 @@
 .home {
-  @extend .page;
+  @extend .section;
   &__row {
-    @extend .page-row;
+    @extend .section-row;
     padding-right: 0;
     padding-left: 0;
     margin-left: 0;

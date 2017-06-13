@@ -14,7 +14,7 @@
 .footer__nav__link {
   @include clear_link;
 }
-.footer__menu{
+.footer__menu {
   @include clear_list;
 }
 .footer__menu__item {
@@ -25,7 +25,7 @@
     }
   }
 }
-.footer__menu__link{
+.footer__menu__link {
   @include font_loader($montserrat, 1, 'n');
   color: $color-gray-dark;
   font-size: 13px;
@@ -35,7 +35,7 @@
     text-decoration: none;
   }
 }
-.footer__menu__title{
+.footer__menu__title {
   @include font_loader($montserrat, 7, 'n');
   color: $color-gray-darkest;
   font-size: 11px;
@@ -48,10 +48,10 @@
   background-size: cover;
 }
 .footer__main_box {
-  padding: 35px 0 75px;
+  padding: 32px 0 60px;
   border-bottom: 1px solid rgba($cloud, 0.4);
   @media (#{$max_phones}){
-    padding-bottom: 35px;
+    padding-bottom: 32px;
   }
 }
 .footer__left_box {
@@ -64,16 +64,27 @@
 }
 .footer__logo_box {
   display: block;
-
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 .footer__logo {
-  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url(../img/etc/logo--circle--color.svg);
+  width: 33px;
+  height: 33px;
+}
+.footer__logo_text {
+  display: inline-block;
+  background-image: url(../img/etc/logo--text--color.svg);
+  width: 94px;
+  height: 33px;
 }
 .footer__description {
   display: inline-block;
-  max-width: 260px;
-  margin-bottom: 30px;
+  color: $color-gray;
+  font-size: 12px;
+  margin-bottom: 40px;
+  @include font_loader($montserrat, 1, 'n');
 }
 
 .footer__menu {
@@ -130,4 +141,43 @@
 }
 .footer__description_box {
   padding: 24px 0 24px;
+}
+.social {
+  @include clear_list;
+}
+.social__item {
+  display: inline-block;
+}
+.social__link {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+  &--facebook {
+    width: 16px;
+    height: 16px;
+    &:before {
+      background: url(#{$icons_path}i--facebook-color.svg) no-repeat center / 16px 16px;
+    }
+  }
+  &--github {
+    width: 17px;
+    height: 17px;
+    &:before{
+      background: url(#{$icons_path}i--github.svg) no-repeat center / 17px 17px;
+    }
+  }
+}
+.social__item + .social__item {
+  margin-left: 12px;
+  &:first-child {
+    margin-left: 0;
+  }
 }

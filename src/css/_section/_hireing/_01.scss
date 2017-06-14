@@ -1,0 +1,20 @@
+.cover--hireing {
+  background-color: $color-robin-blue;
+  .background {
+    @extend .scrim;
+  }
+  .spaceship {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    animation: spaceship infinite ease-in-out 2s;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+@keyframes spaceship {
+  50% {
+    transform: rotate(-3deg) translateY(15px) translateX(5px);
+  }
+}

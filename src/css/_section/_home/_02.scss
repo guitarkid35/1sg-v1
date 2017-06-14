@@ -3,7 +3,7 @@
   background: $white;
   padding-bottom: 120px;
   height: 860px;
-  background-image: linear-gradient(to top, rgba(0,5,38,0.5) 0%, rgba(0,5,38,0) 50%);
+  @extend .scrim-gradient;
   @media (#{$max_phones}){
     padding: 50px 0;
   }

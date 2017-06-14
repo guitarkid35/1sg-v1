@@ -24,10 +24,6 @@
 .hireing-03 {
   text-align: center;
   background: $color-gray-ligtest;
-  // &__container {
-  //   @extend .container;
-  // }
-
   .hireing {
     &_benefit-list {
       @include clear_list;

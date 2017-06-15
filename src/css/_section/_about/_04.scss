@@ -13,7 +13,7 @@
     &__item {
       text-align: center;
       margin-bottom: 56px;
-      width: 100%;
+      //width: 100%;
       height: 250px;
       @media (#{$max_laptop}) {
         height: 320px;
@@ -39,6 +39,9 @@
         text-transform: uppercase;
         line-height: 160%;
         letter-spacing: .05em;
+        @media (#{$max_phones}) {
+          font-size: 14px;
+        }
       }
       &_subtitle {
         @include font_loader($montserrat, 2, 'n');
@@ -48,6 +51,9 @@
         text-transform: uppercase;
         line-height: 160%;
         letter-spacing: .05em;
+        @media (#{$max_phones}) {
+          font-size: 14px;
+        }
       }
     }
   }

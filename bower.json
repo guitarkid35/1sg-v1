@@ -11,6 +11,7 @@
   "dependencies": {
     "filterizr": "https://github.com/giotiskl/Filterizr.git#^1.2.3",
     "bootstrap": "v4.0.0-alpha.2",
-    "webfontloader": "^1.6.24"
+    "webfontloader": "^1.6.24",
+    "slick-carousel": "^1.5.9"
   }
 }

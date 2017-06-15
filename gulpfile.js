@@ -57,10 +57,10 @@ gulp.task('main_js', function() {
 		'bower_components/jQuery/dist/jquery.min.js',
 		'bower_components/webfontloader/webfontloader.js',
 		'bower_components/filterizr/src/jquery.filterizr.js',
+		'bower_components/slick-carousel/slick/slick.min.js',
 		'src/js/main.js'])
 		.pipe(plumber())
 		.pipe(concat('main.js'))
-		.pipe(uglify())
 		.pipe(size())
 		.pipe(gulp.dest('build/js'));
 });

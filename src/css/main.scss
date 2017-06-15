@@ -2,6 +2,10 @@
 @import '../../bower_components/bootstrap/scss/bootstrap';
 // == END OF BOOTSTRAP CSS ==
 
+// == START OF SLICK CSS ==
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// == START OF SLICK CSS ==
+
 // == START OF CEPAVE CSS ==
 @import '_abstracts/_fonts';
 @import '_abstracts/_variables';
@@ -48,3 +52,10 @@
 
 @import '_layout/_header/_navigation_bar';
 // == END OF CEPAVE CSS ==
+.debug {
+  *, *:before, *:after {
+    border: 1px solid $black;
+    box-sizing: border-box;
+    opacity: .8;
+  }
+}

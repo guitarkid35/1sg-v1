@@ -19,6 +19,21 @@ window.addEventListener('DOMContentLoaded', function (){
   }());
   // ===== END OF: webfont loader
 
+  // START OF: sliders =====
+  //all the sliders are configurated via attributes in the markup
+  (function() {
+    var $sliders = $('.js-slider');
+    $sliders.on('init', function(slick){
+      $('.cover__slider__dots')
+        .wrap('<div class="cover__slider__dots_container"></div>');
+    });
+
+    $sliders.slick();
+    $('.slider-for').slick();
+    $('.slider-nav').slick();
+  })();
+  // ===== END OF: sliders
+
   // Start OF: Scroll show/hide navbar  =====
   var navigation = (function(){
     var currentScroll = $(window).scrollTop();
@@ -155,7 +170,7 @@ window.addEventListener('DOMContentLoaded', function (){
     });
 
     con = canvas[0].getContext('2d');
-    for (var i = 0; i < 50; i++) {
+    for (var i = 0; i < 40; i++) {
       pxs[i] = new Circle();
       pxs[i].reset();
     }

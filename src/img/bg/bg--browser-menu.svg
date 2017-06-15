@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3px" height="15px" viewBox="0 0 3 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>bg--menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="______Slice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="browser" transform="translate(-949.000000, -12.000000)" fill="#323C47">
+            <g id="browser-toolbar">
+                <g id="menu" transform="translate(949.000000, 12.000000)">
+                    <path d="M1.5,9 C0.672,9 0,8.32877626 0,7.50050017 C0,6.67122374 0.672,6 1.5,6 C2.328,6 3,6.67122374 3,7.50050017 C3,8.32877626 2.328,9 1.5,9 L1.5,9 Z M1.5,3 C0.672,3 0,2.328 0,1.5 C0,0.671 0.672,0 1.5,0 C2.328,0 3,0.671 3,1.5 C3,2.328 2.328,3 1.5,3 L1.5,3 Z M1.5,12 C2.328,12 3,12.672 3,13.5 C3,14.328 2.328,15 1.5,15 C0.672,15 0,14.328 0,13.5 C0,12.672 0.672,12 1.5,12 L1.5,12 Z" id="shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -20,18 +20,25 @@
     padding: 50px 0;
   }
   .about {
-    &__item {
+    &__client-item {
       text-align: center;
-      margin: 10px;
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: .8;
-    }
-      /*background: $sky;
-      border: $color-gray-lighter 1px solid;
+      padding: 10px;
+      background: transparent;
+      overflow: visible;
+      display: block;
+      position: relative;
+      z-index: 0;
+      margin-bottom: 20px;
       border-radius: 4px;
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px;*/
-    }    
+      &:hover {
+        //opacity: .8;   
+        box-shadow: $shadow5;
+        transition: box-shadow .75s;
+        z-index: 1;
+        border: 1px solid $color-lighter;
+        //transform: scale(1.08);
+        //transition: .2s ease-in-out;
+      }
+    }   
   }
 }

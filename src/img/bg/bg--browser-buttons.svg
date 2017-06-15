@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="8px" viewBox="0 0 40 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>bg--browser-buttons</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="______Slice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="browser" transform="translate(-15.000000, -16.000000)">
+            <g id="browser-toolbar">
+                <g id="browser-buttons" transform="translate(15.000000, 16.000000)">
+                    <g id="group">
+                        <circle id="oval" fill="#FF0030" cx="4" cy="4" r="4"></circle>
+                        <circle id="oval" fill="#F4E609" cx="20" cy="4" r="4"></circle>
+                        <circle id="oval" fill="#95E40B" cx="36" cy="4" r="4"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -52,3 +52,10 @@
 
 @import '_layout/_header/_navigation_bar';
 // == END OF CEPAVE CSS ==
+.debug {
+  *, *:before, *:after {
+    border: 1px solid $black;
+    box-sizing: border-box;
+    opacity: .8;
+  }
+}

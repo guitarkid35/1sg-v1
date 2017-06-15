@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2560px" height="465px" viewBox="0 0 2560 465" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>bgwaveform</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="2560" height="474"></rect>
+    </defs>
+    <g id="______Slice" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(0.000000, -395.000000)">
+            <g id="header">
+                <g id="hero">
+                    <g id="waveform" transform="translate(0.000000, 386.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="amazing"></g>
+                        <g mask="url(#mask-2)" id="Path-2">
+                            <g transform="translate(0.000000, 9.000000)">
+                                <path d="M3.57026251,159 C3.57026251,159 223.554501,124 670.619243,195 C1117.68399,266 1417.50121,321 1791.82923,237 C2166.15725,153 2558.22593,0 2558.22593,0 L2560,473 L0,473 L3.57026251,159 Z" fill="#FF566D" style="mix-blend-mode: hard-light;"></path>
+                                <path d="M0.0221757342,393.311601 C0.0221757342,393.311601 220.464711,121.296538 577.794949,219.296538 C935.125187,317.296538 1491.56481,252.296538 1864.89491,234.296538 C2238.22501,216.296538 2560,435.311601 2560,435.311601 L2560,473.311601 L0,473.311601 L0.0221757342,393.311601 Z" fill="#FFC725" style="mix-blend-mode: hard-light;" transform="translate(1280.000000, 335.655800) scale(-1, 1) translate(-1280.000000, -335.655800) "></path>
+                                <path d="M0.0221757342,164 C0.0221757342,164 206.242612,278.015063 659.572018,276.015063 C1112.90142,274.015063 1568.00859,472.015063 1944.89422,371.015063 C2321.77984,270.015063 2560,253 2560,253 L2560,473.015063 L0,473.015063 L0.0221757342,164 Z" fill="#47AAFF" style="mix-blend-mode: hard-light;" transform="translate(1280.000000, 318.507531) scale(-1, 1) translate(-1280.000000, -318.507531) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

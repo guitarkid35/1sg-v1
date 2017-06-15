@@ -1,11 +1,9 @@
 // section block cover
 .cover {
-  // position: relative; //keeps menu
   position: fixed;
   width: 100%;
   height: 840px;
-  // height: 100vh;
-  padding-top: 0.1px; //enables margin-top
+  padding-top: 0.1px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

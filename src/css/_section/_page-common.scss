@@ -143,3 +143,13 @@
   height: 100%;
   @extend .scrim-gradient;
 }
+.under-construction {
+  background: url(../img/under-construction.svg);
+  width: 200px;
+  height: 49px;
+  position: fixed;
+  z-index: 99999;
+  top: 20px;
+  right: -50px;
+  transform: rotate(45deg);
+}

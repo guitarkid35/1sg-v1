@@ -15,7 +15,7 @@
       width: 100%;
     }
   }
-  
+
   @media (#{$max_phones}){
     padding: 50px 0;
   }
@@ -31,14 +31,14 @@
       margin-bottom: 20px;
       border-radius: 4px;
       &:hover {
-        //opacity: .8;   
+        //opacity: .8;
         box-shadow: $shadow5;
         transition: box-shadow .75s;
         z-index: 1;
-        border: 1px solid $color-lighter;
+        border: 1px solid $color-gray-lighter;
         //transform: scale(1.08);
         //transition: .2s ease-in-out;
       }
-    }   
+    }
   }
 }

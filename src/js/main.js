@@ -23,11 +23,6 @@ window.addEventListener('DOMContentLoaded', function (){
   //all the sliders are configurated via attributes in the markup
   (function() {
     var $sliders = $('.js-slider');
-    $sliders.on('init', function(slick){
-      $('.cover__slider__dots')
-        .wrap('<div class="cover__slider__dots_container"></div>');
-    });
-
     $sliders.slick();
     $('.slider-for').slick();
     $('.slider-nav').slick();

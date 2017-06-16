@@ -43,8 +43,12 @@
 .cover__title_text__accent_word {
   @include font_loader($playfair, 7, 'i');
   font-style: italic;
+}
+
 #galaxy {
   position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .cover {

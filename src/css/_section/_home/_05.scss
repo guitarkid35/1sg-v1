@@ -15,11 +15,12 @@
     pointer-events: none;
   }
   @media (#{$max_phones}){
-    padding: 50px 0;
+    padding: 50px 0 100px;
   }
   .home {
     &__title {
       color: $white;
+      letter-spacing: .1em;
     }
     &__description {
       color: $white;
@@ -28,37 +29,34 @@
       text-align: center;
       padding: 100px 15px;
       @media (#{$max_tablets}) {
-        padding: 60px 15px 0 15px;
+        padding: 60px 30px 0 60px;
       }
       @media (#{$max_phones}){
-        padding: 60px 20px 0 20px;
+        padding: 60px 40px 0;
       }
       &_container {
-        border-bottom: 4px $color-yellow  solid;
         border-radius: 4px;
         background: $white;
         box-shadow: $shadow2-hover;
+        padding: 56px 12px 28px;
         &:hover {
           box-shadow: $shadow4-hover;
           transition: box-shadow .75s;
         }
       }
       &_img {
-        width: 100%;
+        width: 50%;
         border-radius: 4px 4px 0 0;
-        display: block;
-        margin-bottom: 24px;
+        //display: block;
+        margin-bottom: 48px;
       }
       &_text {
-        @include font_loader($montserrat, 1, 'n');
-        padding: 0 12px;
-        height: 42px;
+        @include font_loader($montserrat, 4, 'n');
         display: block;
-        margin-bottom: 24px;
         font-size: 16px;
-        color: $color-gray-darkest;
+        color: $color-gray-darker;
         @media (#{$max_phones}){
-          font-size: 14px;
+          font-size: 16px;
           height: 32px;
         }
       }

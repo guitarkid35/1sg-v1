@@ -3,14 +3,38 @@
 .hireing.hireing-04
   .hireing__title-box
     h2.hireing__title
-      | 來吧加入我們
+      | 來吧~加入我們!
     span.hireing__description
       | 一個簡單的團隊，希望成就不簡單的事，期待遇見同樣的你。
-  .row
-    .title
-    .sub
-    .content
-      ul
-        li
+  .container
+    .row
+      .title
+        nav.filter
+          ul
+            li.__item
+              .item-link 全部
+            li.__item
+              .item-link 監控系統
+            li.__item
+              .item-link 區塊鏈
+            li.__item
+              .item-link 台北
+            li.__item
+              .item-link 北京
+      .sub
+        .text
+          | 開放職缺
+          span 5
+      .content.hireing-job
+        ul
+          -for (var i = 0; i < 10; i++)
+            li
+              .left-col
+                .job-title 軟體工程師 - Front End
+                .qualifications senior
+                .update-dete 最後更新 2017.06.16
+              .right-col
+                .label react
+                .label vue2
 
 // == END OF HIREING 04 ==

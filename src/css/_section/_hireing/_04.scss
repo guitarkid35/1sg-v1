@@ -1,8 +1,84 @@
 .hireing-04 {
   position: relative;
-  background: $white;
+  background: $color-gray-lighter;
   padding-bottom: 120px;
   @media (#{$max_phones}){
     padding: 50px 0;
+  }
+  .title {
+    border-radius: 8px 8px 0 0;
+    background: #F4F7F9;
+    // padding: 24px 48px;
+  }
+  .sub {
+    font-size: 20px;
+    color: $color-gray-darkest;
+    padding: 16px 48px;
+    background: $white;
+    border-bottom: 1px solid $color-gray-lighter;
+    text-align: left;
+  }
+  .filter {
+    ul, li {
+      @include clear_list;
+      display: inline-block;
+    }
+    li {
+      @extend .header__menu_item;
+      .item-link {
+        @extend .header__menu_link;
+        color:$color-gray;
+        &:hover,
+        &.state-active {
+          &:before {
+            background-color: $color-primary;
+          }
+          color: $color-gray-darkest;
+        }
+      }
+    }
+  }
+  .hireing-job {
+    padding: 24px 48px;
+    background: $white;
+     ul, li {
+      @include clear_list;
+    }
+    li {
+      overflow: hidden;
+    }
+    li + li {
+      margin-top: 24px;
+    }
+  }
+  .left-col {
+    float: left;
+    text-align: left;
+  }
+  .right-col {
+    float: right;
+    text-align: right;
+  }
+  .job-title {
+    font-size: 20px;
+    color: $color-gray-darkest;
+  }
+  .qualifications {
+    color: $color-gray;
+    font-size: 14px;
+    display: inline-block;
+  }
+  .update-dete {
+    color: $color-gray;
+    font-size: 14px;
+    display: inline-block;
+  }
+  .qualifications + .update-dete {
+    &:before {
+      content: '/';
+      padding-right: 4px;
+      padding-left: 4px;
+      display: inline-block;
+    }
   }
 }

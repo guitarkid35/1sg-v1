@@ -1,0 +1,8 @@
+.hireing-04 {
+  position: relative;
+  background: $white;
+  padding-bottom: 120px;
+  @media (#{$max_phones}){
+    padding: 50px 0;
+  }
+}

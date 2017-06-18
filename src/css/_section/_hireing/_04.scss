@@ -27,13 +27,15 @@
     }
   }
   .filter {
+    ul {
+      position: relative;
+    }
     ul, li {
       @include clear_list;
     }
     .job-category {
       &-item {
         @extend .header__menu_item;
-        text-align: left;
         &-link {
           @extend .header__menu_link;
           color:$color-gray;
@@ -49,16 +51,20 @@
     }
   }
   .hireing-job {
-    padding: 24px 48px;
     background: $white;
-     ul, li {
+    position: relative;
+    padding: 24px 48px;
+    ul, li {
       @include clear_list;
     }
-    li {
-      overflow: hidden;
+    ul {
+      position: relative;
     }
-    li + li {
-      margin-top: 32px;
+    li {
+      @include clearfix;
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
   }
   .left-col {
@@ -91,4 +97,7 @@
       display: inline-block;
     }
   }
+}
+.hireing-job.filtr-container {
+
 }

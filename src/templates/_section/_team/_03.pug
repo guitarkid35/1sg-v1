@@ -17,19 +17,19 @@ mixin team-list__item(category, style, name, title)
     // For filtering controls add
     - var item = ".team__filter-tags__item";
     li.team__filter-tags__item
-      button.button--black(type='button', data-filter='all', class='js-filtering-button')
+      button.state-active(type='button', data-filter='all', class='js-filtering-button')
         | all
     li.team__filter-tags__item
-      button.button--gray(type='button', data-filter='1', class='js-filtering-button')
+      button(type='button', data-filter='1', class='js-filtering-button')
         | G & A
     li.team__filter-tags__item
-      button.button--gray(type='button', data-filter='2', class='js-filtering-button')
+      button(type='button', data-filter='2', class='js-filtering-button')
         | Community
     li.team__filter-tags__item
-      button.button--gray(type='button', data-filter='3', class='js-filtering-button')
+      button(type='button', data-filter='3', class='js-filtering-button')
         | Engineering
     li.team__filter-tags__item
-      button.button--gray(type='button', data-filter='4', class='js-filtering-button')
+      button(type='button', data-filter='4', class='js-filtering-button')
         | Product
   .team__row
     .team-03__container.filtr-container
@@ -68,7 +68,7 @@ mixin team-list__item(category, style, name, title)
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Brian','Sr. Engineer')
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Ben','Software Engineer')
         +team-list__item('3','background-image: url(http://via.placeholder.com/250/DDDDDD/FFFFFF)','Desmond','Front End Engineer')
-        
+
       ul.team_member-list.team_member-list--product
         li.team_member-list__item(data-category='4', class='filtr-item')
           .team_member-list__item__cover

@@ -1,5 +1,15 @@
 // == START OF HIREING 04 ==
 
+mixin job(title, qualifications, date, label1, label2, category)
+  li(data-category=category, class='filtr-item')
+    .left-col
+      .job-title #{title}
+      .qualifications #{qualifications}
+      .update-date #{date}
+    .right-col
+      .label #{label1}
+      .label #{label2}
+
 .hireing.hireing-04
   .hireing__title-box
     h2.hireing__title
@@ -7,34 +17,37 @@
     span.hireing__description
       | 一個簡單的團隊，希望成就不簡單的事，期待遇見同樣的你。
   .container
-    .row
-      .title
-        nav.filter
-          ul
-            li.__item
-              .item-link 全部
-            li.__item
-              .item-link 監控系統
-            li.__item
-              .item-link 區塊鏈
-            li.__item
-              .item-link 台北
-            li.__item
-              .item-link 北京
-      .sub
-        .text
-          | 開放職缺
-          span 5
-      .content.hireing-job
-        ul
-          -for (var i = 0; i < 10; i++)
-            li
-              .left-col
-                .job-title 軟體工程師 - Front End
-                .qualifications senior
-                .update-dete 最後更新 2017.06.16
-              .right-col
-                .label react
-                .label vue2
+    .job-category
+      nav.filter
+        ul.team__filter-tags
+          li.job-category-item
+            .job-category-item-link(data-filter='all', class='js-filtering-button state-active')
+              | 全部
+          li.job-category-item
+            .job-category-item-link(data-filter='1', class='js-filtering-button')
+              | 監控系統
+          li.job-category-item
+            .job-category-item-link(data-filter='2', class='js-filtering-button')
+              | 區塊鏈
+          li.job-category-item
+            .job-category-item-link(data-filter='3', class='js-filtering-button')
+              | 台北
+          li.job-category-item
+            .job-category-item-link(data-filter='4', class='js-filtering-button')
+              | 北京
+    .count
+      .count-text
+        | 開放職缺
+        span.count-number
+          | 6
+    .content.hireing-job
+      ul.filtr-container
+        +job('軟體工程師 - Front End', 'senior', '最後更新 2017.06.16', 'react', 'vue2', '1, 3')
+        +job('軟體工程師 - Blockchain', 'senior', '最後更新 2017.06.16', '', '','2, 3')
+        +job('軟體工程師 - 分佈式監控系統', 'senior', '最後更新 2017.06.16', '', '','1, 3')
+        +job('軟體工程師 - SRE', '', '最後更新 2017.06.16', 'react', 'vue2','2, 3')
+        +job('軟體工程師 - 實習', 'Intern', '最後更新 2017.06.16', 'react', 'vue2','1, 3')
+        +job('UI/UX 設計師 - 實習', 'Intern', '最後更新 2017.06.16', 'react', 'vue2','1, 3')
+        +job('UI/UX 設計師 - 實習', 'Intern', '最後更新 2017.06.16', 'react', 'vue2','4')
 
 // == END OF HIREING 04 ==

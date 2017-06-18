@@ -61,8 +61,8 @@ window.addEventListener('DOMContentLoaded', function (){
       $filters.on('click', function(event) {
         event.preventDefault();
 
-        $filters.removeClass('button--black').addClass('button--gray');
-        $(this).addClass('button--black');
+        $filters.removeClass('state-active').addClass('button--gray');
+        $(this).addClass('state-active');
       });
     };
 

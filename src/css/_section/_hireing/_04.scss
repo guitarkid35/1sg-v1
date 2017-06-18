@@ -5,35 +5,45 @@
   @media (#{$max_phones}){
     padding: 50px 0;
   }
-  .title {
+  .job-category {
     border-radius: 8px 8px 0 0;
     background: #F4F7F9;
-    // padding: 24px 48px;
   }
-  .sub {
+  .count {
     font-size: 20px;
     color: $color-gray-darkest;
     padding: 16px 48px;
     background: $white;
     border-bottom: 1px solid $color-gray-lighter;
     text-align: left;
+    .count-number {
+      margin-left: 1em;
+      &:before {
+        content: '['
+      }
+      &:after {
+        content: ']'
+      }
+    }
   }
   .filter {
     ul, li {
       @include clear_list;
-      display: inline-block;
     }
-    li {
-      @extend .header__menu_item;
-      .item-link {
-        @extend .header__menu_link;
-        color:$color-gray;
-        &:hover,
-        &.state-active {
-          &:before {
-            background-color: $color-primary;
+    .job-category {
+      &-item {
+        @extend .header__menu_item;
+        text-align: left;
+        &-link {
+          @extend .header__menu_link;
+          color:$color-gray;
+          &:hover,
+          &.state-active {
+            &:before {
+              background-color: $color-primary;
+            }
+            color: $color-gray-darkest;
           }
-          color: $color-gray-darkest;
         }
       }
     }
@@ -48,7 +58,7 @@
       overflow: hidden;
     }
     li + li {
-      margin-top: 24px;
+      margin-top: 32px;
     }
   }
   .left-col {

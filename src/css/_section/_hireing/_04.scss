@@ -50,6 +50,10 @@
       }
     }
   }
+  .count-number {
+    color: $color-gray;
+    @include font_loader($montserrat, 1, 'n');
+  }
   .hireing-job {
     background: $white;
     position: relative;
@@ -65,6 +69,18 @@
       width: 100%;
       padding-top: 16px;
       padding-bottom: 16px;
+      border-left: 4px solid transparent;
+      &:hover {
+        background-color: $color-gray-ligtest;
+        padding-left: 28px;
+        border-left: 4px solid $color-blue;
+      }
+      a {
+        display: block;
+        width: 100%;
+        position: relative;
+        @include clearfix;
+      }
     }
   }
   .left-col {
@@ -83,13 +99,15 @@
     color: $color-gray;
     font-size: 14px;
     display: inline-block;
+    @include font_loader($montserrat, 1, 'n');
   }
-  .update-dete {
+  .update-date {
     color: $color-gray;
     font-size: 14px;
     display: inline-block;
+    @include font_loader($montserrat, 1, 'n');
   }
-  .qualifications + .update-dete {
+  .qualifications + .update-date {
     &:before {
       content: '/';
       padding-right: 4px;

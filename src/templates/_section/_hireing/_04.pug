@@ -1,14 +1,15 @@
 // == START OF HIREING 04 ==
 
-mixin job(title, qualifications, date, label1, label2, category)
-  li(data-category=category, class='filtr-item')
-    .left-col
-      .job-title #{title}
-      .qualifications #{qualifications}
-      .update-date #{date}
-    .right-col
-      .label #{label1}
-      .label #{label2}
+mixin job(title, qualifications, date, link, category)
+  li(data-category=category, class='filtr-item', target='_brank')
+    a(href=link)
+      .left-col
+        .job-title #{title}
+        .qualifications #{qualifications}
+        .update-date #{date}
+      //- .right-col
+      //-   .label #{label1}
+      //-   .label #{label2}
 
 .hireing.hireing-04
   .hireing__title-box
@@ -32,22 +33,22 @@ mixin job(title, qualifications, date, label1, label2, category)
           li.job-category-item
             .job-category-item-link(data-filter='3', class='js-filtering-button')
               | 台北
-          li.job-category-item
-            .job-category-item-link(data-filter='4', class='js-filtering-button')
-              | 北京
-    .count
-      .count-text
-        | 開放職缺
-        span.count-number
-          | 6
+          //- li.job-category-item
+          //-   .job-category-item-link(data-filter='4', class='js-filtering-button')
+          //-     | 北京
+    //- .count
+    //-   .count-text
+    //-     | 開放職缺
+    //-     span.count-number
+    //-       | 7
     .content.hireing-job
       ul.filtr-container
-        +job('軟體工程師 - Front End', 'senior', '最後更新 2017.06.16', 'react', 'vue2', '1, 3')
-        +job('軟體工程師 - Blockchain', 'senior', '最後更新 2017.06.16', '', '','2, 3')
-        +job('軟體工程師 - 分佈式監控系統', 'senior', '最後更新 2017.06.16', '', '','1, 3')
-        +job('軟體工程師 - SRE', '', '最後更新 2017.06.16', 'react', 'vue2','2, 3')
-        +job('軟體工程師 - 實習', 'Intern', '最後更新 2017.06.16', 'react', 'vue2','1, 3')
-        +job('UI/UX 設計師 - 實習', 'Intern', '最後更新 2017.06.16', 'react', 'vue2','1, 3')
-        +job('UI/UX 設計師 - 實習', 'Intern', '最後更新 2017.06.16', 'react', 'vue2','4')
+        +job('軟體工程師 - 監控系統', 'Senior', '最後更新 2017.06.16', '//www.104.com.tw/job/?jobno=53qe6&jobsource=n104bank1', '1, 3')
+        +job('軟體工程師 - Front End', 'Senior', '最後更新 2017.06.16', '//www.104.com.tw/job/?jobno=53qe0&jobsource=n104bank1', '1, 3')
+        +job('軟體工程師 - Blockchain', 'Junior', '最後更新 2017.06.16', '//www.104.com.tw/job/?jobno=5hf1x&jobsource=n104bank1', '2, 3')
+        +job('軟體工程師 - 暑期實習生', 'Intern', '最後更新 2017.06.16', '//www.104.com.tw/job/?jobno=5h84y&jobsource=n104bank1', '1, 3')
+        +job('資深軟體工程師 - Blockchain', 'Senior', '最後更新 2017.06.16', '//www.104.com.tw/job/?jobno=53xro&jobsource=n104bank1', '2, 3')
+        +job('架構師 - Blockchain', 'Senior', '最後更新 2017.06.16', '//www.104.com.tw/job/?jobno=5cn2o&jobsource=n104bank1', '2, 3')
+        +job('資深軟體工程師 - 監控系統', 'Senior', '最後更新 2017.06.16', '//www.104.com.tw/job/?jobno=53qe7&jobsource=n104bank1','1, 3')
 
 // == END OF HIREING 04 ==

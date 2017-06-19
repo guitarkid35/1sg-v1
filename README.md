@@ -5,7 +5,7 @@
 ## How to install
 
 Prerequisites:
-* [Node.js](http://nodejs.org/) >=7.6.0 
+* [Node.js](http://nodejs.org/) >=6.7.0 
 * [Bower](http://bower.io/)
 * [Gulp](http://gulpjs.com/)
 

@@ -2,6 +2,7 @@ block vars
   - var lang            = 'zh-Hant-TW'
   - var pageTitle       = 'cepave'
   - var pageDescription = 'Description'
+  - var bodyClass       = ''
 
 doctype html
 html(lang=lang class='no-js')
@@ -14,8 +15,9 @@ html(lang=lang class='no-js')
     link(rel='icon', type='image/x-icon', href='img/favicons/favicon.png')
     link(href="//fonts.googleapis.com/css?family=Montserrat:100,400,500,700,900", rel="stylesheet")
     link(rel="stylesheet", href="css/main.css")
-  .under-construction
-    img.loveparrot(src='img/loveparrot.gif')
-  main.page_wrapper.page_wrapper--presentation-navbar
-    block content
-    script(src="js/main.js", defer)
+  body(class=bodyClass)
+    .under-construction
+      img.loveparrot(src='img/loveparrot.gif')
+    main.page_wrapper.page_wrapper--presentation-navbar
+      block content
+      script(src="js/main.js", defer)

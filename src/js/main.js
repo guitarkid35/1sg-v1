@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function (){
       $(window).scroll(function () {
         var currentTop = $(this).scrollTop();
         var timer = window.setTimeout(function() {
-          if (currentTop > 70) {
+          if (currentTop > 70 || $('body').hasClass('contact')) {
             $("[data-nav-status='toggle']").addClass('is-show');
           } else {
             $("[data-nav-status='toggle']").removeClass('is-show');
@@ -44,8 +44,9 @@ window.addEventListener('DOMContentLoaded', function (){
           };
         }, 200);
       });
-      if (currentTop > 70) {
+      if (currentTop > 70 || $('body').hasClass('contact')) {
         $("[data-nav-status='toggle']").addClass('is-default');
+        console.log('has contact');
       };
     };
     return {

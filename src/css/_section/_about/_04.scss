@@ -1,7 +1,7 @@
 .about-04 {
   position: relative;
   background: $color-gray-ligtest;
-  background-image: url('../img/about-wave-btm.svg');
+  background-image: url(#{$background_path}bg--about-wave-btm.svg);
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;

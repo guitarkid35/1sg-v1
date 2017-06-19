@@ -33,13 +33,15 @@ script.
       '</div>';
 
     map = new google.maps.Map(document.getElementById('map-wrapper'), mapOptions);
-    var image = 'img/icons/i--location--primary.svg';
+    var image = {
+      url: 'img/etc/logo--circle--color--white-bg.svg',
+      size: new google.maps.Size(48, 48)
+    };
     var myLatLng = new google.maps.LatLng( 25.0449856, 121.5213585);
     var beachMarker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      icon: image,
-      size: 50
+      icon: image
     });
 
     var infowindow = new google.maps.InfoWindow({

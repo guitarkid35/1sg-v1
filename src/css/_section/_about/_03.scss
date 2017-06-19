@@ -1,13 +1,4 @@
-@each $className in xiaomi, didi, weibo, qihoo, pingan, fastweb, meituan, iqiyi {
-  .about__client-item {
-    &.#{$className} { 
-      background-image: url(../img/enterprise/enterprise-#{$className}.svg); 
-      &:hover {
-        background-image: url(../img/enterprise/color/enterprise-#{$className}.svg);
-      }
-    }
-  }
-}
+$enterprise-path: '../img/enterprise/enterprise-';
 .about-03 {
   position: relative;
   background: $white;
@@ -43,6 +34,14 @@
       border: 1px solid transparent;
       background-repeat: no-repeat;
       background-position: center;
+      @each $className in xiaomi, didi, weibo, qihoo, pingan, fastweb, meituan, iqiyi {
+        &.#{$className} {
+          background-image: url(#{$enterprise-path}#{$className}--gray.svg);
+          &:hover {
+            background-image: url(#{$enterprise-path}#{$className}--color.svg);
+          }
+        }
+      }
       &:hover {
         box-shadow: $shadow5;
         transition: box-shadow .75s;

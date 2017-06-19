@@ -1,0 +1,19 @@
+.home {
+  @extend .section;
+  &__row {
+    @extend .section-row;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &__title-box {
+    @extend .title-box;
+  }
+  &__title {
+    @extend .title-box__title;
+  }
+  &__description {
+    @extend .title-box__description;
+  }
+}

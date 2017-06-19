@@ -1,0 +1,15 @@
+.team {
+  @extend .section;
+  &__row {
+    @extend .section-row;
+  }
+  &__title-box {
+    @extend .title-box;
+  }
+  &__title {
+    @extend .title-box__title;
+  }
+  &__description {
+    @extend .title-box__description;
+  }
+}

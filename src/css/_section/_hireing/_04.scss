@@ -1,0 +1,121 @@
+.hireing-04 {
+  position: relative;
+  background: $color-gray-lighter;
+  padding-bottom: 120px;
+  @media (#{$max_phones}){
+    padding: 50px 0;
+  }
+  .job-category {
+    border-radius: 8px 8px 0 0;
+    background: #F4F7F9;
+  }
+  .count {
+    font-size: 20px;
+    color: $color-gray-darkest;
+    padding: 16px 48px;
+    background: $white;
+    border-bottom: 1px solid $color-gray-lighter;
+    text-align: left;
+    .count-number {
+      margin-left: 1em;
+      &:before {
+        content: '['
+      }
+      &:after {
+        content: ']'
+      }
+    }
+  }
+  .filter {
+    ul {
+      position: relative;
+    }
+    ul, li {
+      @include clear_list;
+    }
+    .job-category {
+      &-item {
+        @extend .header__menu_item;
+        &-link {
+          @extend .header__menu_link;
+          color:$color-gray;
+          &:hover,
+          &.state-active {
+            &:before {
+              background-color: $color-primary;
+            }
+            color: $color-gray-darkest;
+          }
+        }
+      }
+    }
+  }
+  .count-number {
+    color: $color-gray;
+    @include font_loader($montserrat, 1, 'n');
+  }
+  .hireing-job {
+    background: $white;
+    position: relative;
+    padding: 24px 48px;
+    ul, li {
+      @include clear_list;
+    }
+    ul {
+      position: relative;
+    }
+    li {
+      @include clearfix;
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-left: 4px solid transparent;
+      &:hover {
+        background-color: $color-gray-ligtest;
+        padding-left: 28px;
+        border-left: 4px solid $color-blue;
+      }
+      a {
+        display: block;
+        width: 100%;
+        position: relative;
+        @include clearfix;
+      }
+    }
+  }
+  .left-col {
+    float: left;
+    text-align: left;
+  }
+  .right-col {
+    float: right;
+    text-align: right;
+  }
+  .job-title {
+    font-size: 20px;
+    color: $color-gray-darkest;
+  }
+  .qualifications {
+    color: $color-gray;
+    font-size: 14px;
+    display: inline-block;
+    @include font_loader($montserrat, 1, 'n');
+  }
+  .update-date {
+    color: $color-gray;
+    font-size: 14px;
+    display: inline-block;
+    @include font_loader($montserrat, 1, 'n');
+  }
+  .qualifications + .update-date {
+    &:before {
+      content: '/';
+      padding-right: 4px;
+      padding-left: 4px;
+      display: inline-block;
+    }
+  }
+}
+.hireing-job.filtr-container {
+
+}

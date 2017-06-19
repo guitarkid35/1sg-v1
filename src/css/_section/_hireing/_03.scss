@@ -1,0 +1,83 @@
+@mixin hireing_benefit-list__item__cover($color){
+  .hireing_benefit-list__item__cover {
+    background-color: rgba($color, 1);
+  }
+  &:hover {
+    .hireing_benefit-list__item__cover {
+      transition: background-color .75s;
+      background-color: rgba($color, 0);
+    }
+  }
+}
+
+@each $child, $color in (1: $color-blue-dark, 2: $color-blue, 3: $color-blue-light, 4: $color-robin-blue, 5: $color-green, 6: $color-yellow, 7: $color-orange, 8: $color-red, 9: $color-purple, 10: $color-secondary, 11: $color-blue-darker, 12: $color-blue){
+  .hireing_benefit-list__item {
+    .hireing_benefit-list__item__text {
+      color: $white;
+    }
+    &:nth-child(#{$child}) {
+      @include hireing_benefit-list__item__cover($color);
+    }
+  }
+}
+
+.hireing-03 {
+  text-align: center;
+  background: $color-gray-ligtest;
+  .hireing {
+    &_benefit-list {
+      @include clear_list;
+      margin: 0 auto;
+      max-width: 1600px;
+      overflow: hidden;
+      &__item {
+        position: relative;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+          text-decoration: none;
+        }
+        float: left;
+        width: 100 / 6 * 1%;
+        height: 200px;
+        @media (#{$max_laptop}) {
+          width: 100 / 4 * 1%;
+          height: 185px;
+        }
+        @media (#{$max_tablets}) {
+          width: 100 / 3 * 1%;
+          height: 160px;
+        }
+        @media (#{$max_phones}) {
+          width: 100 / 2 * 1%;
+          height: 135px;
+        }
+        &__cover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+        }
+        &__img {
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          height: 100%;
+        }
+        &__text {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          color: $white;
+          font-size: 16px;
+          @include font_loader($montserrat, 1, 'n');
+          padding: 0 10%;
+        }
+      }
+    }
+  }
+}
+

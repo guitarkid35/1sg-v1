@@ -2,11 +2,17 @@
 @import '../../bower_components/bootstrap/scss/bootstrap';
 // == END OF BOOTSTRAP CSS ==
 
+// == START OF SLICK CSS ==
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
+// == START OF SLICK CSS ==
+
 // == START OF CEPAVE CSS ==
 @import '_abstracts/_fonts';
 @import '_abstracts/_variables';
 @import '_abstracts/_mixins';
 @import '_abstracts/_icons';
+@import '_theme/_custom';
 
 @import '_base/_base';
 
@@ -15,35 +21,43 @@
 
 @import '_components/_button';
 
-@import '_components/_covers/_common';
+// page
+@import '_section/_page-common';
+  // > home
+  @import '_section/_home/_common';
+  @import '_section/_home/_01';
+  @import '_section/_home/_02';
+  @import '_section/_home/_03';
+  @import '_section/_home/_04';
+  @import '_section/_home/_05';
 
-// page > home
-@import '_components/_home/_common';
-@import '_components/_home/_02';
-@import '_components/_home/_03';
-@import "_components/_covers/_home";
+  // > about
+  @import '_section/_about/_common';
+  @import '_section/_about/_02';
+  @import '_section/_about/_03';
+  @import '_section/_about/_04';
 
-// page > about
-@import '_components/_about/_common';
-@import '_components/_about/_02';
-@import '_components/_about/_03';
-@import '_components/_about/_04';
-@import "_components/_covers/_about";
+  // > team
+  @import '_section/_team/_common';
+  @import '_section/_team/_02';
+  @import '_section/_team/_03';
 
-// page > team
-@import '_components/_team/_common';
-@import '_components/_team/_02';
-@import '_components/_team/_03';
-@import '_components/_covers/_team';
+  // > hireing
+  @import '_section/_hireing/_common';
+  @import '_section/_hireing/_01';
+  @import '_section/_hireing/_02';
+  @import '_section/_hireing/_03';
+  @import '_section/_hireing/_04';
 
-// page > hireing
-@import '_components/_hireing/_common';
-@import '_components/_hireing/_02';
-@import '_components/_hireing/_03';
-@import "_components/_covers/_hireing";
-
-// page > contact
-@import '_components/_contact/_contact';
+  // > contact
+  @import '_section/_contact/_contact';
 
 @import '_layout/_header/_navigation_bar';
 // == END OF CEPAVE CSS ==
+.debug {
+  *, *:before, *:after {
+    border: 1px solid $black;
+    box-sizing: border-box;
+    opacity: .8;
+  }
+}

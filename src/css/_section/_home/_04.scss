@@ -1,0 +1,48 @@
+.home-04 {
+  position: relative;
+  background: $white;
+  padding: 100px 0 180px;
+  @media (#{$max_phones}){
+    padding: 50px 0;
+  }
+  .home {
+    &__item {
+      text-align: center;
+      padding: 100px 15px;
+      @media (#{$max_tablets}) {
+        padding: 60px 15px 0 15px;
+      }
+      @media (#{$max_phones}){
+        padding: 60px 20px 0 20px;
+      }
+      &_container {
+        border-bottom: 4px $color-yellow solid;
+        border-radius: 4px;
+        box-shadow: $shadow2;
+        &:hover {
+          box-shadow: $shadow4-hover;
+          transition: box-shadow .75s;
+        }
+      }
+      &_img {
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+        display: block;
+        margin-bottom: 24px;
+      }
+      &_text {
+        @include font_loader($montserrat, 1, 'n');
+        padding: 0 12px;
+        height: 42px;
+        display: block;
+        margin-bottom: 24px;
+        font-size: 16px;
+        color: $color-gray-darkest;
+        @media (#{$max_phones}){
+          font-size: 14px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

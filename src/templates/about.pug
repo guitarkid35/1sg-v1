@@ -1,23 +1,16 @@
-doctype html
-html
-  head
-    //tags
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width")
+extends _layout/_layout
 
-    //assets
-    link(rel="stylesheet", href="css/main.css")
+//- Variables
+block vars
+  - var lang            = 'zh-Hant-TW'
+  - var pageTitle       = 'cepave | About'
+  - var pageDescription = 'Description'
 
-    //page title
-    title
-      | Cepave.com
-  body
-    main.page_wrapper.page_wrapper--presentation-navbar
-      - var selected = 'About'
-      include _components/_header/_navigation_bar
-      include _components/_covers/_about
-      include _components/_about/_02
-      include _components/_about/_03
-      include _components/_about/_04
-      include _components/_footer/_footer
-    script(src="js/main.js", defer)
+block content
+  - var selected = 'About'
+  include _layout/_header/_navigation_bar
+  include _section/_about/_01
+  include _section/_about/_02
+  include _section/_about/_03
+  include _section/_about/_04
+  include _layout/_footer/_footer

@@ -1,0 +1,34 @@
+.cover.cover--home.galaxy-wrapper
+  canvas#galaxy
+  .background
+    .container
+      .under-cover
+      .cover__content_box
+        .slider-for(data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "arrows": false, "fade": true, "cssEase": "linear", "asNavFor": ".slider-nav"}')
+          .slide
+            h2.cover__title
+              span.cover__title_text
+                | 區塊鏈創新業務
+            .cover__description_box
+              span.cover__description_text
+                | 建立區塊鏈生態，探索區塊鏈藍海的星際航道！
+          .slide
+            h2.cover__title
+              span.cover__title_text
+                | 顛覆監控系統的既有印象
+            .cover__description_box
+              span.cover__description_text
+                | 開源共享、發現價值、高效運維
+        .presentation__container
+          .browser-bar
+            .browser-button
+            .browser-menu
+          .slider-nav(data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "asNavFor": ".slider-for", "dots": true, "focusOnSelect": true, "speed": 800}')
+            .browser
+              .app-item
+                img(src='img/pictures/pic--app-block_chain.png')
+            .browser
+              .app-item
+                img(src='img/pictures/pic--app-monitoring.png')
+
+.container(style='width: 100%; height: 860px;')

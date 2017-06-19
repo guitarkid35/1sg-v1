@@ -1,22 +1,14 @@
-doctype html
-html
-  head
-    //tags
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width")
+extends _layout/_layout
 
-    //assets
-    link(href="//fonts.googleapis.com/css?family=Montserrat:100,400,500,700,900", rel="stylesheet")
-    link(rel="stylesheet", href="css/main.css")
+//- Variables
+block vars
+  - var lang            = 'zh-Hant-TW'
+  - var pageTitle       = 'cepave | Team'
+  - var pageDescription = 'Description'
 
-    //page title
-    title
-      | Cepave.com
-  body
-    main.page_wrapper.page_wrapper--presentation-navbar
-      include _components/_header/_navigation_bar
-      include _components/_covers/_team
-      include _components/_team/_02
-      include _components/_team/_03
-      include _components/_footer/_footer
-    script(src="js/main.js", defer)
+block content
+  include _layout/_header/_navigation_bar
+  include _section/_team/_01
+  include _section/_team/_02
+  include _section/_team/_03
+  include _layout/_footer/_footer

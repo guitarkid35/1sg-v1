@@ -1,0 +1,10 @@
+// override
+
+.container {
+  max-width: 1170px;
+  // 1200
+  @media (#{$min_laptop}){
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

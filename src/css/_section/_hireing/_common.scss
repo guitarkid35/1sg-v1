@@ -1,0 +1,20 @@
+.hireing {
+  @extend .section;
+  &__row {
+    @extend .section-row;
+    // @extend .container-fluid;
+    // padding: 0;
+    // // max-width: 1140px;
+    // // position: relative;
+  }
+  &__title-box {
+    @extend .title-box;
+  }
+  &__title {
+    @extend .title-box__title;
+  }
+  &__description {
+    @extend .title-box__description;
+  }
+}
+

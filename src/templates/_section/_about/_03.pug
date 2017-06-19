@@ -1,7 +1,16 @@
 // == START OF ABOUT 03 ==
-mixin about__client-item(className, link)
-  .col-xs-12.col-md-6.col-lg-3
-    a.about__client-item(class=className, href=link, ,target='blank')
+
+-
+  var enterprise = {
+    'xiaomi'  : 'http://www.mi.com',
+    'didi'    : 'http://www.xiaojukeji.com',
+    'weibo'   : 'http://tw.weibo.com',
+    'qihoo'   : '//www.360.cn',
+    'pingan'  : '//fincloud.pingan.com',
+    'fastweb' : 'http://www.fastweb.com.cn',
+    'meituan' : 'http://tb.meituan.com/',
+    'iqiyi'   : 'http://www.iqiyi.com/'
+  }
 
 .about.about-03
   .about-wave-space
@@ -14,12 +23,8 @@ mixin about__client-item(className, link)
       | 自 2015 年成立以來，吸引了眾多互聯網大玩家的目光
   .container
     .row.about__row
-      +about__client-item('xiaomi', 'http://www.mi.com')
-      +about__client-item('didi', 'http://www.xiaojukeji.com')
-      +about__client-item('weibo', 'http://tw.weibo.com')
-      +about__client-item('qihoo', '//www.360.cn')
-      +about__client-item('pingan', '//fincloud.pingan.com')
-      +about__client-item('fastweb', 'http://www.fastweb.com.cn')
-      +about__client-item('meituan', 'http://tb.meituan.com/')
-      +about__client-item('iqiyi', 'http://www.iqiyi.com/')
+      each  link, key in enterprise
+        .col-xs-12.col-md-6.col-lg-3
+          a.about__client-item(class=key, href=link, target='_blank')
+
 // == END OF ABOUT 03 ==

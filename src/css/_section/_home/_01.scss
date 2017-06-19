@@ -3,7 +3,7 @@
   .background {
     @extend .scrim;
     .under-cover {
-      background-image: url(../img/bg/bg--waveform.svg);
+      background-image: url(#{$background_path}bg--waveform.svg);
       background-size: 100%;
       background-position: bottom;
       background-repeat: no-repeat;

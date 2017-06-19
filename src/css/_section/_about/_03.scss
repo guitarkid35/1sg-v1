@@ -1,3 +1,13 @@
+@each $className in xiaomi, didi, weibo, qihoo, pingan, fastweb, meituan, iqiyi {
+  .about__client-item {
+    &.#{$className} { 
+      background-image: url(../img/enterprise/enterprise-#{$className}.svg); 
+      &:hover {
+        background-image: url(../img/enterprise/color/enterprise-#{$className}.svg);
+      }
+    }
+  }
+}
 .about-03 {
   position: relative;
   background: $white;
@@ -33,54 +43,6 @@
       border: 1px solid transparent;
       background-repeat: no-repeat;
       background-position: center;
-      &.xiaomi {
-        background-image: url(../img/enterprise/enterprise-xiaomi.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-xiaomi.svg);
-        }
-      }
-      &.didi {
-        background-image: url(../img/enterprise/enterprise-didi.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-didi.svg);
-        }
-      }
-      &.weibo {
-        background-image: url(../img/enterprise/enterprise-weibo.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-weibo.svg);
-        }
-      }
-      &.qihoo {
-        background-image: url(../img/enterprise/enterprise-qihoo.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-qihoo.svg);
-        }
-      }
-      &.pingan {
-        background-image: url(../img/enterprise/enterprise-pingan.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-pingan.svg);
-        }
-      }
-      &.fastweb {
-        background-image: url(../img/enterprise/enterprise-fastweb.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-fastweb.svg);
-        }
-      }
-      &.meituan {
-        background-image: url(../img/enterprise/enterprise-meituan.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-meituan.svg);
-        }
-      }
-      &.iqiyi {
-        background-image: url(../img/enterprise/enterprise-iqiyi.svg);
-        &:hover {
-          background-image: url(../img/enterprise/color/enterprise-iqiyi.svg);
-        }
-      }
       &:hover {
         box-shadow: $shadow5;
         transition: box-shadow .75s;

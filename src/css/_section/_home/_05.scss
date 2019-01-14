@@ -1,19 +1,7 @@
 .home-05 {
   position: relative;
-  background: #4C6AFF;
+  background: transparent;
   padding: 100px 0;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 374px;
-    width: 100%;
-    background-image: url('../img/bg--home_wave.svg');
-    background-size: cover;
-    background-position-x: center;
-    bottom: 100%;
-    pointer-events: none;
-  }
   @media (#{$max_phones}){
     padding: 50px 0 100px;
   }
@@ -26,9 +14,6 @@
       color: $white;
       letter-spacing: .1em;
     }
-    &description {
-      color: $white;
-    }
     &item {
       text-align: center;
       @media (#{$max_tablets}) {
@@ -40,32 +25,31 @@
       &_link {
         display: block;
         border-radius: 4px;
-        background: $white;
-        box-shadow: $shadow2-hover;
         padding: 56px 12px 28px;
         position: relative;
         z-index: 0;
-        &:hover {
-          z-index: 1;
-          box-shadow: $shadow5-hover;
-          transition: box-shadow .75s;
-        }
+        // &:hover {
+        //   z-index: 1;
+        //   box-shadow: $shadow5-hover;
+        //   transition: box-shadow .75s;
+        // }
       }
       &_img {
-        width: 50%;
-        border-radius: 4px 4px 0 0;
+        width: 80%;
+        border-radius: 50%;
         margin-bottom: 48px;
       }
       &_title {
-        @include font_loader($montserrat, 4, 'n');
+        @include font_loader($montserrat, 5, 'n');
         display: block;
         font-size: 20px;
+        color: $white;
       }
       &_text {
         @include font_loader($montserrat, 2, 'n');
         display: block;
         font-size: 14px;
-        color: $color-gray-darker;
+        color: $color-yellow-light;
       }
     }
   }

@@ -23,28 +23,28 @@
 }
 $brand-height: 46px;
 $brand-width: $brand-height;
-.header__logo_img {
-  display: block;
-  width: $brand-width;
-  height: $brand-height;
-  background-image: url(../img/etc/logo--circle--white.svg);
-  float: left;
-  .is-show &,
-  .is-default & {
-    background-image: url(../img/etc/logo--circle--color.svg);
-  }
-}
+// .header__logo_img {
+//   display: block;
+//   width: $brand-width;
+//   height: $brand-height;
+//   background-image: url(../img/etc/logo--circle--white.svg);
+//   float: left;
+//   .is-show &,
+//   .is-default & {
+//     background-image: url(../img/etc/logo--circle--color.svg);
+//   }
+// }
 .header__logo_text {
   display: block;
   width: 132px;
   height: $brand-height;
   color: transparent;
-  background-image: url(../img/etc/logo--text--white.svg);
+  background-image: url(../img/etc/logo--text--color.svg);
   background-size: cover;
   float: left;
   .is-show &,
   .is-default & {
-    background-image: url(../img/etc/logo--text--color.svg);
+    background-image: url(../img/etc/logo--text--white.svg);
   }
 }
 .header__menu_list {

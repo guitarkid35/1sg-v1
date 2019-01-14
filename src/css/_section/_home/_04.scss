@@ -1,47 +1,83 @@
 .home-04 {
   position: relative;
-  background: $white;
+  background: transparent;
   padding: 100px 0 180px;
+  height: 100%; 
   @media (#{$max_phones}){
     padding: 50px 0;
   }
   .home {
-    &__item {
-      text-align: center;
-      padding: 100px 15px;
-      @media (#{$max_tablets}) {
-        padding: 60px 15px 0 15px;
-      }
-      @media (#{$max_phones}){
-        padding: 60px 20px 0 20px;
-      }
-      &_container {
-        border-bottom: 4px $color-yellow solid;
-        border-radius: 4px;
-        box-shadow: $shadow2;
-        &:hover {
-          box-shadow: $shadow4-hover;
-          transition: box-shadow .75s;
+    &__title {
+      @include font_loader($montserrat, 5, 'n');
+      color: $color-gray-ligtest;
+      text-transform: uppercase;
+      letter-spacing: .0.5em;
+    }
+  }
+  .timeline {
+    position:relative;
+    &__group{
+      max-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 120px;
+      position: relative;
+    }
+    &__line{
+      width: 4px;
+      height: 500px;
+      background-color: $color-primary ;
+      position: absolute;
+      top:0;
+      left:50%;
+      transform: translateX(-50%);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+    .timeline_cards {
+      &__row:nth-child(odd) {
+        display: flex;
+        justify-content: flex-start;
+        text-align: right;
+        margin-right: 100px;
+        &>:before {
+          transform: translate(50%,-50%);
+          right:-62px;
+
         }
       }
-      &_img {
-        width: 100%;
-        border-radius: 4px 4px 0 0;
-        display: block;
-        margin-bottom: 24px;
-      }
-      &_text {
-        @include font_loader($montserrat, 1, 'n');
-        padding: 0 12px;
-        height: 42px;
-        display: block;
-        margin-bottom: 24px;
-        font-size: 16px;
-        color: $color-gray-darkest;
-        @media (#{$max_phones}){
-          font-size: 14px;
-          height: 32px;
+      &__row:nth-child(even) {
+        display: flex;
+        justify-content: flex-end;
+        text-align: left;
+        margin-left: 100px;
+        &>:before {
+          transform: translate(-50%,-50%);
+          left:-62px;
         }
+      }
+    } 
+    &__card {
+      padding:12px;
+      background-color: rgba(1,1,1,0.2);
+      width: calc(50% - 56px); 
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+      &:before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 2px;
+        background-color: $color-orange ;
+        top:50%;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+      }
+      &__title{
+        margin:0;
+        margin-bottom: 10px;
+        color: $color-orange ;
+        letter-spacing: 2px;
+      }
+      &__text {
+        color:$stone ;
       }
     }
   }

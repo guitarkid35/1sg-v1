@@ -1,61 +1,42 @@
 .home-03 {
   position: relative;
-  background:linear-gradient(to bottom, rgba(#4697FF,1) 60%, rgba($color-blue-light,1) 100%);
+  background:transparent;
   padding: 120px 0;
+  height: 1000px;
   @media (#{$max_phones}){
     padding: 50px 0;
   }
-  &-left {
-    padding-right: 45px;
+  .background{
+    background-image: url(#{$background_path}bg--features.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
   }
   .home {
-    &__textbox {
-      padding: 12px 50px 0 0;
-      text-align: left;
-      @media (#{$max_tablets}) {
-        padding: 16px;
-        text-align: center;
-      }
-      @media (#{$max_phones}){
-        padding: 20px;
-        text-align: center;
-      }
-      &_title {
-        @include font_loader($montserrat, 4, 'n');
-        margin-bottom: 48px;
-        font-size: 36px;
-        line-height: 54px;
-        color: $white;
-        text-transform: uppercase;
-        letter-spacing: .05em;
-      }
-      &_text {
-        @include font_loader($montserrat, 1, 'n');
-        display: block;
-        margin: 0 0 20px 0;
-        font-size: 14px;
-        color: $white;
-        margin-bottom: 1em;
-      }
+    position:relative;
+    background: transparent;
+    &__title-box {
+      margin-top: 100px;
+    }
+    &__title {
+      @include font_loader($montserrat, 5, 'n');
+      margin-bottom: 10px;
+      font-size: 36px;
+      color: $color-gray-ligtest;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 24px;
     }
     &__item {
       text-align: left;
       padding: 0 15px;
-      &_btn {
-        width: 100%;
-        height: 40px;
-        border-radius: 4px;
-        background: linear-gradient(to left, rgba($color-blue-dark,1) 0%, rgba($color-blue-light,1) 100%);
-        color: $white;
-        font-size: 14px;
-        margin-top: 28px;
-      }
       &_container {
-        border: 1px $white solid;
-        border-radius: 4px;
         padding: 48px 24px 24px;
-        background: $white;
-        box-shadow: $shadow2;
         &:hover {
           box-shadow: $shadow4-hover;
           transition: box-shadow .75s;
@@ -69,6 +50,7 @@
       }
       &_img {
         margin-bottom: 28px;
+        width: 60%;
         display: block;
         margin: auto;
       }
@@ -77,22 +59,23 @@
         text-align: center;
         margin: 16px 0 20px;
         font-size: 20px;
-        color: $color-gray-darker;
+        color: $color-gray-lighter;
         text-transform: uppercase;
         letter-spacing: .05em;
       }
       &_text {
-        @include font_loader($montserrat, 1, 'n');
+        @include font_loader($montserrat, 4, 'n');
         display: block;
         margin: auto;
         font-size: 14px;
-        color: $color-gray;
+        color: $color-yellow-light;
+        letter-spacing: .05em;
+        text-align: justify;
+        text-justify:inter-ideograph;
         line-height: 22px;
-        color: $color-gray;
         padding-top: 20px;
         padding-bottom: 20px;
         border-top: 1px solid $color-gray-lighter;
-        border-bottom: 1px solid $color-gray-lighter;
       }
     }
   }

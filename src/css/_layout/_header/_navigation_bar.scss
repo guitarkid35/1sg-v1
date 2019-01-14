@@ -26,14 +26,14 @@
   &.is-default {
     &:before {
       height: 70px;
-      background-color: $white;
+      background-color: $color-blue-darker;
       box-shadow: 0 2px 4px rgba($black, .1);
     }
   }
   &.is-show {
     &:before {
       height: 70px;
-      background-color: $white;
+      background-color: $color-blue-darker;
       box-shadow: 0 2px 4px rgba($black, .1);
       transition: height .3s cubic-bezier(.0, .0, 1, 1);
     }
@@ -71,7 +71,7 @@
   transition: color 0.4s ease;
   &:hover, &:focus, &:active, &:visited {
     text-decoration: none;
-    color: white;
+    color: $color-orange;
   }
   @media (max-width: 1366px) {
     font-size: 9px;

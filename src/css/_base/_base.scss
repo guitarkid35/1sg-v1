@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-
   font-weight: 400;
+  position:relative;
 }
 html {
   height: 100%;
@@ -13,7 +13,13 @@ body {
   @include font_loader($montserrat, 4, 'n');
   &.state-fixed{
     overflow: hidden;
+
   }
+  background-image: url(#{$background_path}bg--index.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 a {
   &, &:hover, &:focus {

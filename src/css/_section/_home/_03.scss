@@ -1,6 +1,6 @@
 .home-03 {
   position: relative;
-  background:transparent;
+  background: transparent;
   padding: 120px 0;
   height: 1000px;
   @media (#{$max_phones}){
@@ -17,9 +17,8 @@
     width: 100%;
     height: 100%;
   }
-  .home {
+  .home { 
     position:relative;
-    background: transparent;
     &__title-box {
       margin-top: 100px;
     }

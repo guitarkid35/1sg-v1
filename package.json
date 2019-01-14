@@ -34,6 +34,5 @@
     "imagemin-pngquant": "^4.1.2",
     "yargs": "^3.9.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

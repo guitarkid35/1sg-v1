@@ -2,22 +2,23 @@
   position: relative;
   background: transparent;
   padding: 120px 0;
-  height: 1000px;
+  height: 500px;
   @media (#{$max_phones}){
     padding: 50px 0;
   }
   .home {
-    position:relative;
-    &__title-box {
-      margin-top: 100px;
-    }
-    &__title {
-      @include font_loader($montserrat, 5, 'n');
-      margin-bottom: 10px;
-      font-size: 36px;
-      color: $color-gray-ligtest;
-      text-transform: uppercase;
-      letter-spacing: .05em;
-      margin-bottom: 24px;
-    }
-   }
+  position:relative;
+  &__title-box {
+    // margin-top: 50px;
+  }
+  &__title {
+    @include font_loader($montserrat, 5, 'n');
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: $color-gray-ligtest;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-bottom: 24px;
+  }
+ }
+}

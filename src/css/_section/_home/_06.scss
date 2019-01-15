@@ -1,7 +1,7 @@
 .home-06 {
   position: relative;
   background: transparent;
-  padding: 120px 0 180px;
+  padding: 120px 0 200px;
   height: 100%;
   @media (#{$max_phones}){
     padding: 50px 0;
@@ -30,16 +30,57 @@
       @media (#{$max_phones}){
         padding: 60px 40px 0;
       }
+      @media (#{$_partner_smaller}){
+        padding: 5px;
+      }
       &_link {
         display: block;
-        border-radius: 4px;
         padding: 56px 12px 28px;
         position: relative;
         z-index: 0;
+        transition:0.3s;
+        @media (#{$_partner_smaller}) {
+          padding: 0;
+        }
       }
       &_img {
         width: 90%;
         margin-bottom: 48px;
+        @media (#{$_partner_smaller}) {
+          width: 100%;
+        }
+      }
+      &_link:hover {
+        filter: brightness(150%);
+      }
+    }
+    &other {
+      &_li {
+        float: left;
+        display: inline-block;
+      }
+      &_link {
+        display: block;
+        width: 120px;
+        height: 50px;
+        border-radius:25px;
+        border:1px solid $color-gray-dark ;
+        margin:10px 5px 10px;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+          background-color: $color-primary;
+          border:1px solid $color-yellow-light;
+        }
+      }
+      &_text {
+        color:$color-gray-dark  ;
+        font-size: 14px;
+        line-height: 3.5em;
+        transition: 0.3s;
+        &:hover {
+          color:$color-yellow-light;
+        }
       }
     }
   }

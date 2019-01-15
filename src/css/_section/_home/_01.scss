@@ -2,15 +2,13 @@
   position: relative;
   background: transparent;
   padding-bottom: 120px;
-  width: 100%;
-  height: 100%;
   @media (#{$max_phones}){
     padding: 50px 0;
   }
   .home {
     &__title-box {
       position:absolute;
-      bottom:0;
+      bottom: 0;
     }
     &__description {
       @include font_loader($notosanstc, 4, 'n');
@@ -21,4 +19,7 @@
       margin-bottom: 20px;
     }
   }
+}
+img {
+  width: 100%;
 }

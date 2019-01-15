@@ -51,10 +51,6 @@
 }
 .footer__description {
   display: inline-block;
-  color: $color-gray;
-  font-size: 12px;
-  margin-bottom: 40px;
-  @include font_loader($montserrat, 1, 'n');
 }
 .footer__copyright {
   position: absolute;
@@ -64,6 +60,10 @@
   display: block;
 }
 .footer__description_box {
+  color: $color-gray;
+  font-size: 12px;
+  margin-bottom: 40px;
+  @include font_loader($montserrat, 1, 'n');
   padding: 24px 0 24px;
 }
 

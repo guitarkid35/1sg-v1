@@ -21,17 +21,20 @@
       margin-right: auto;
       margin-left: auto;
       margin-top: 120px;
-      position: relative;
     }
     &__line{
       width: 2px;
-      height: 530px;
+      height: 100%;
       background-color: $color-primary ;
       position: absolute;
       top:0;
       left:50%;
       transform: translateX(-50%);
       box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+      @media (#{$_timeline_smaller}){
+        left:0;
+        margin-left: 50px;
+      }
     }
     .timeline_cards {
       &__row:nth-child(odd) {
@@ -39,9 +42,18 @@
         justify-content: flex-start;
         text-align: right;
         margin-right: 100px;
-        &>:before {
+        @media (#{$_timeline_smaller}){
+          justify-content: flex-end;
+          text-align: left;
+          margin-left:100px;
+        }
+        &>:before { 
           transform: translate(50%,-50%);
           right:-56px;
+          @media (#{$_timeline_smaller}){
+            transform: translate(-50%,-50%);
+            left:-56px;
+          }          
         }
         &>:after {
           content: "";
@@ -53,13 +65,17 @@
           top:46%;
           background-color: $color-yellow-light ;
           box-shadow:0px 0px 10px 1px rgba($color-orange,1);
+          @media (#{$_timeline_smaller}){
+            left:0;
+            margin-left: -82px;
+          }
         }
       }
       &__row:nth-child(even) {
         display: flex;
         justify-content: flex-end;
         text-align: left;
-        margin-left: 100px;
+        margin-left:100px;
         &>:before {
           transform: translate(-50%,-50%);
           left:-56px;
@@ -74,17 +90,25 @@
           top:46.5%;
           background-color: $color-yellow-light;
           box-shadow:0px 0px 10px 1px rgba($color-orange,1);
+          @media (#{$_timeline_smaller}){
+            left:0;
+            margin-left:-82px;
+          }
         }
       }
     } 
     &__card {
-      padding:40px;
+      padding:40px 10px;
       width: calc(50% - 27px); 
+      @media (#{$_timeline_smaller}){
+        width: calc(100% - 27px); 
+        margin-bottom: 24px;
+      }
       &:before {
         content: "";
         position: absolute;
         width: 50px;
-        height: 2px;
+        height: 1px;
         background-color: $color-yellow-light;
         top:50%;
       }
@@ -96,6 +120,9 @@
       }
       &__text {
         color:$stone ;
+        @media (#{$max_phones}){
+          font-size: 14px;
+        }
       }
     }
   }

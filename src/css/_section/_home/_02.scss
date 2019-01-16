@@ -3,7 +3,6 @@
   background: transparent;
   padding-bottom: 120px;
   height: 100%;
-  @extend .scrim-gradient;
   @media (#{$max_phones}){
     padding: 50px 0;
   }
@@ -46,10 +45,6 @@
       color: $color-yellow-light;
     }
     &__item {
-      .row {
-        padding-left:15px;
-        padding-right:15px;
-      }
       &_btn {
         width: 100%;
         background-color: #fff;

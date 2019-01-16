@@ -97,8 +97,10 @@
   }
   .container {
     max-width: 1170px;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .section-row {
@@ -157,5 +159,38 @@
     position: absolute;
     left: 36px;
     bottom: 0;
+  }
+}
+/* img
+---------------------*/
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+/* imgbox
+---------------------*/
+
+.imgbox {
+  width: 100%;
+  overflow: hidden;
+}
+.imgbox__inner {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  &.imgbox__inner--4-3 {
+    padding-top: calc(100% * 3 / 4);
+  }
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }

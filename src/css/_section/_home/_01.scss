@@ -2,6 +2,7 @@
   position: relative;
   background: transparent;
   padding-bottom: 120px;
+  height: 100%;
   @media (#{$max_phones}){
     padding: 50px 0;
   }
@@ -19,7 +20,4 @@
       margin-bottom: 20px;
     }
   }
-}
-img {
-  width: 100%;
 }

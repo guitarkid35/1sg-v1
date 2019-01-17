@@ -2,10 +2,18 @@
 @import '../../bower_components/bootstrap/scss/bootstrap';
 // == END OF BOOTSTRAP CSS ==
 
+// == END OF WOW CSS ==
+@import '../../bower_components/wow/css/libs/animate.scss';
+// == END OF WOW CSS ==
+
 // == START OF SLICK CSS ==
 @import "../../bower_components/slick-carousel/slick/slick.scss";
 @import "../../bower_components/slick-carousel/slick/slick-theme.scss";
-// == START OF SLICK CSS ==
+// == END OF SLICK CSS ==
+
+// == START OF FANCY BOX CSS ==
+@import '../../bower_components/fancybox/dist/fancybox';
+// == END OF FANCY BOX CSS==
 
 // == START OF CEPAVE CSS ==
 @import '_abstracts/_fonts';
@@ -32,24 +40,24 @@
   @import '_section/_home/_05';
   @import '_section/_home/_06';
 
-  // > about
-  @import '_section/_about/_common';
-  @import '_section/_about/_01';
-  @import '_section/_about/_02';
-  @import '_section/_about/_03';
-  @import '_section/_about/_04';
+  // // > about
+  // @import '_section/_about/_common';
+  // @import '_section/_about/_01';
+  // @import '_section/_about/_02';
+  // @import '_section/_about/_03';
+  // @import '_section/_about/_04';
 
-  // > team
-  @import '_section/_team/_common';
-  @import '_section/_team/_02';
-  @import '_section/_team/_03';
+  // // > team
+  // @import '_section/_team/_common';
+  // @import '_section/_team/_02';
+  // @import '_section/_team/_03';
 
-  // > hireing
-  @import '_section/_hireing/_common';
-  @import '_section/_hireing/_01';
-  @import '_section/_hireing/_02';
-  @import '_section/_hireing/_03';
-  @import '_section/_hireing/_04';
+  // // > hireing
+  // @import '_section/_hireing/_common';
+  // @import '_section/_hireing/_01';
+  // @import '_section/_hireing/_02';
+  // @import '_section/_hireing/_03';
+  // @import '_section/_hireing/_04';
 
   // > contact
   @import '_section/_contact/_contact';

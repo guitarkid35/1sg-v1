@@ -19,6 +19,10 @@ window.addEventListener('DOMContentLoaded', function (){
   }());
   // ===== END OF: webfont loader
 
+  // ===== START OF WOW =====
+  new WOW().init();
+  // ===== END OF WOW =====
+
   // START OF: sliders =====
   //all the sliders are configurated via attributes in the markup
   (function() {
@@ -132,114 +136,42 @@ window.addEventListener('DOMContentLoaded', function (){
   }());
   // ===== END OF: content changer
 
-  // START OF: Galaxy canvas animation =====
-  var galaxy = (function(){
-    var WIDTH, HEIGHT, canvas, con, g;
-    var pxs = [];
-    var rint = 50;
-
-    var windowSize = function() {
-      WIDTH = $('.galaxy-wrapper').innerWidth();
-      HEIGHT = $('.galaxy-wrapper').innerHeight();
-      canvas = $('#galaxy');
-      canvas.attr('width', WIDTH).attr('height', HEIGHT);
-    };
-
-    windowSize();
-
-    $(window).resize(function() {
-      windowSize();
-    });
-    var init = function () {
-      con = canvas[0].getContext('2d');
-      for (var i = 0; i < 40; i++) {
-        pxs[i] = new Circle();
-        pxs[i].reset();
-      }
-      requestAnimationFrame(draw);
-
-      function draw() {
-        con.clearRect(0, 0, WIDTH, HEIGHT);
-        con.globalCompositeOperation = "lighter";
-        for (var i = 0; i < pxs.length; i++) {
-          pxs[i].fade();
-          pxs[i].move();
-          pxs[i].draw();
-        }
-        requestAnimationFrame(draw);
-      }
-
-      function Circle() {
-        this.s = {
-          ttl    : 15000,
-          xmax   : 3,
-          ymax   : 2,
-          rmax   : 16,
-          rt     : 1,
-          xdef   : 960,
-          ydef   : 540,
-          xdrift : 4,
-          ydrift : 4,
-          random : true,
-          blink  : true
-        };
-        this.reset = function() {
-          this.x = (this.s.random ? WIDTH * Math.random() : this.s.xdef);
-          this.y = (this.s.random ? HEIGHT * Math.random() : this.s.ydef);
-          this.r = ((this.s.rmax - 1) * Math.random()) + 1;
-          this.dx = (Math.random() * this.s.xmax) * (Math.random() < 0.5 ? -1 : 1);
-          this.dy = (Math.random() * this.s.ymax) * (Math.random() < 0.5 ? -1 : 1);
-          this.hl = (this.s.ttl / rint) * (this.r / this.s.rmax);
-          this.rt = Math.random() * this.hl;
-          this.s.rt = Math.random() + 1;
-          this.stop = Math.random() * 0.2 + 0.4;
-          this.s.xdrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
-          this.s.ydrift *= Math.random() * (Math.random() < 0.5 ? -1 : 1);
-        };
-        this.fade = function() {
-          this.rt += this.s.rt;
-        };
-        this.draw = function() {
-          if (this.s.blink && (this.rt <= 0 || this.rt >= this.hl)) this.s.rt = this.s.rt * -1;
-          else if (this.rt >= this.hl) this.reset();
-          var newo = 1 - (this.rt / this.hl);
-          con.beginPath();
-          con.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
-          con.closePath();
-          var cr = this.r * newo;
-          g = con.createRadialGradient(this.x, this.y, 0, this.x, this.y, (cr <= 0 ? 1 : cr));
-          g.addColorStop(0.0, 'rgba(255,255,255,' + newo + ')');
-          g.addColorStop(this.stop, 'rgba(255,255,255,' + (newo * 0.2) + ')');
-          g.addColorStop(1.0, 'rgba(255,255,255,0)');
-          con.fillStyle = g;
-          con.fill();
-        };
-        this.move = function() {
-          this.x += (this.rt / this.hl) * this.dx;
-          this.y += (this.rt / this.hl) * this.dy;
-          if (this.x > WIDTH || this.x < 0) this.dx *= -1;
-          if (this.y > HEIGHT || this.y < 0) this.dy *= -1;
-        };
-        this.getX = function() {
-          return this.x;
-        };
-        this.getY = function() {
-          return this.y;
-        };
-      };
-    }
-    return {
-      init: init
-    }
-  }());
-  // END OF: Galaxy canvas animation =====
-
   fonts.load();
   contentChanger.bind();
   if($('.filtr-container').length > 0){
     filterizr.init();
   };
   navigation.bind();
-  galaxy.init();
 });
 // == END OF CEPAVE JS ==
+
+// == START OF BACK TO TOP ==
+$(function(){
+  $('#BackTop').click(function(){ 
+    $('html,body').animate({scrollTop:0}, 333);
+  });
+  $(window).scroll(function() {
+    if ( $(this).scrollTop() > 300 ){
+      $('#BackTop').fadeIn(222);
+    } else {
+      $('#BackTop').stop().fadeOut(222);
+    }
+  }).scroll();
+});
+// == END OF BACK TO TOP ==
+
+// == START OF parallax ==
+$(".parallax, [data-paroller-factor]").paroller({
+  factor: -0.25,            // multiplier for scrolling speed and offset
+  factorXs: 0.1,           // multiplier for scrolling speed and offset
+  type: 'foreground',     // background, foreground
+  direction: 'vertical' // vertical, horizontal
+});
+$(".parallax-h, [data-paroller-factor]").paroller({
+  factor: -0.1,            // multiplier for scrolling speed and offset
+  factorXs: -0.1,           // multiplier for scrolling speed and offset
+  type: 'foreground',     // background, foreground
+  direction: 'horizontal' // vertical, horizontal
+});
+// == END OF parallax ==
+

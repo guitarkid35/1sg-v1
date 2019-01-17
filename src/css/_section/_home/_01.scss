@@ -6,6 +6,11 @@
   @media (#{$max_phones}){
     padding: 50px 0;
   }
+  img {
+    width: 105%;
+    left:50%;
+    transform: translateX(-50%);
+  }
   .home {
     &__title-box {
       position:absolute;

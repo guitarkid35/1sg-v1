@@ -1,9 +1,9 @@
 {
-  "name": "cepave.com",
+  "name": "1.SG",
   "description": "na",
   "main": "gulpfile.js",
   "authors": [
-    "DuableJ"
+    "KingOfDuableJ"
   ],
   "license": "MIT",
   "homepage": "",
@@ -12,6 +12,8 @@
     "filterizr": "https://github.com/giotiskl/Filterizr.git#1.2.3",
     "bootstrap": "v4.0.0-alpha.2",
     "webfontloader": "^1.6.24",
-    "slick-carousel": "^1.5.9"
+    "slick-carousel": "^1.5.9",
+    "fancybox": "^3.5.6",
+    "parallax.js": "^1.5.0"
   }
 }

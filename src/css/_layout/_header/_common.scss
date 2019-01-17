@@ -1,56 +1,56 @@
   //common styles for all headers
   .header__container {
-  @include clearfix;
-  text-align: center;
-  height: 70px;
+    @include clearfix;
+    text-align: center;
+    height: 70px;
   }
   .header__left_box {
-  position: relative;
-  z-index: 10;
-  float: left;
-  height: 100%;
+    position: relative;
+    z-index: 10;
+    float: left;
+    height: 100%;
   }
   .header__right_box {
-  float: right;
-  position: relative;
-  z-index: 1;
+    float: right;
+    position: relative;
+    z-index: 1;
   }
   .header__logo_box {
-  margin-top: 12px;
-  display: inline-block;
-  overflow: hidden;
+    margin-top: 12px;
+    display: inline-block;
+    overflow: hidden;
   }
   $brand-height: 46px;
   $brand-width: $brand-height;
   .header__logo_text {
-  display: block;
-  width: 132px;
-  height: $brand-height;
-  color: transparent;
-  background-image: url(../img/etc/logo--text--color.svg);
-  background-size: cover;
-  float: left;
-  .is-show &,
-  .is-default & {
-    background-image: url(../img/etc/logo--text--white.svg);
-  }
+    display: block;
+    width: 132px;
+    height: $brand-height;
+    color: transparent;
+    background-image: url(../img/etc/logo--text--color.svg);
+    background-size: cover;
+    float: left;
+    .is-show &,
+    .is-default & {
+      background-image: url(../img/etc/logo--text--white.svg);
+    }
   }
   .header__menu_list {
-  @include clear_list;
-  font-size: 0px;//fix space
+    @include clear_list;
+    font-size: 0px;//fix space
   }
   .header__menu_item {
-  display: inline-block;
+    display: inline-block;
   }
   .header__menu_link {
-  display: inline-block;
-  color: rgba($white, .5);
-  padding: 27px 16px;
-  @include clear_link;
-  @include font_loader($montserrat, 4, 'n');
-  position: relative;
-  font-size: 14px;
-  line-height: 16px;
+    display: inline-block;
+    color: rgba($white, .5);
+    padding: 27px 16px;
+    @include clear_link;
+    @include font_loader($montserrat, 4, 'n');
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
   .is-show &,
   .is-default & {
     color: $color-gray;

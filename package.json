@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "DuableJ",
+  "author": "KingOfDuableJ",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^5.2.0",

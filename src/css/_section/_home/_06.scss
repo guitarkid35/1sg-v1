@@ -20,6 +20,9 @@
       letter-spacing: .05em;
       margin-bottom: 24px;
     }
+    &__row {
+      margin-bottom: 5rem;
+    }
   }
   .home__ {
     &item {
@@ -45,7 +48,7 @@
       }
       &_img {
         width: 90%;
-        margin-bottom: 48px;
+        margin-bottom: 0;
         @media (#{$_partner_smaller}) {
           width: 100%;
         }
@@ -56,7 +59,7 @@
     }
     &other {
       &_li {
-        float: left;
+        float: center;
         display: inline-block;
       }
       &_link {

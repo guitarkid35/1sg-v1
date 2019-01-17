@@ -6,21 +6,9 @@
   @media (#{$max_phones}){
     padding: 50px 0;
   }
-  .rover {
-    position: relative;
-    height: 500px;
+  img {
+    width: 120%;
     left:-5%;
-    img{
-      max-height: 100%;  
-      max-width: 100%; 
-      width: auto;
-      height: auto;
-      top: 0;  
-      bottom: 0;  
-      left: 0;  
-      right: 0;  
-      margin: auto;
-    }
   }
   .home {
     position:relative;
@@ -54,6 +42,13 @@
         color: $white;
         font-size: 14px;
         margin-top: 28px;
+      }
+      &_img {
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+
       }
     }
   }

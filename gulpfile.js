@@ -26,6 +26,7 @@ gulp.task('browser-sync', function() {
     }
   });
 });
+//vendor
 gulp.task('vendor', function() {
   gulp.src([
     'bower_components/fancybox/dist/jquery.fancybox.min.css',
@@ -35,6 +36,19 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/css'))
     .pipe(gulp.dest('./build/vendor/css'));
 });
+
+gulp.task('vendor', function() {
+  gulp.src([
+    'bower_components/wow/dist/wow.js',
+    'bower_components/fancybox/dist/jquery.fancybox.min.js',
+    'bower_components/paroller/dist/jquery.paroller.js'])
+    .pipe(plumber())
+    .pipe(concat('vendor.js'))
+    .pipe(size())
+    .pipe(gulp.dest('./vendor/js'))
+    .pipe(gulp.dest('./build/vendor/js'));
+});
+
 // css
 gulp.task('css', function() {
   gulp.src([
@@ -65,12 +79,9 @@ gulp.task('css', function() {
 gulp.task('main_js', function() {
   gulp.src([
     'bower_components/jQuery/dist/jquery.min.js',
-    'bower_components/wow/dist/wow.js',
     'bower_components/webfontloader/webfontloader.js',
     'bower_components/filterizr/src/jquery.filterizr.js',
     'bower_components/slick-carousel/slick/slick.min.js',
-    'bower_components/fancybox/dist/jquery.fancybox.min.js',
-    'bower_components/paroller/dist/jquery.paroller.js',
     'src/js/main.js'])
     .pipe(plumber())
     .pipe(concat('main.js'))

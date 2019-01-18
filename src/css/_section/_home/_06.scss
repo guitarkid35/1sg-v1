@@ -54,7 +54,7 @@
         }
       }
       &_link:hover {
-        filter: brightness(150%);
+        filter: saturate(5);
       }
     }
     &other {
@@ -67,7 +67,7 @@
         width: 120px;
         height: 50px;
         border-radius:25px;
-        border:1px solid $color-gray-dark ;
+        border:1px solid $color-secondary ;
         margin:10px 5px 10px;
         text-decoration: none;
         transition: 0.3s;
@@ -92,6 +92,9 @@
           font-size: 8px;
           line-height: 2.5em;
         }
+      }
+      &_filter {
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF);
       }
     }
   }

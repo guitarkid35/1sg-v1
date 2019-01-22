@@ -26,7 +26,7 @@
       margin-top: 100px;
     }
     &__title {
-      @include font_loader($montserrat, 5, 'n');
+      @include font_loader($montserrat, 4, 'n');
       margin-bottom: 10px;
       font-size: 36px;
       color: $color-gray-ligtest;

@@ -1,17 +1,33 @@
 - var menu = { '关于1SG': 'javascript:;','联系我们': 'javascript:;', '合作伙伴': 'javascript:;' }
 
-nav.navigation_bar(data-nav-status='toggle')
+nav.navigation_bar.js-header
   .container.header__container
     .header__left_box
       a.header__logo_box(href='/')
         span.header__logo_img
-        span.header__logo_text
-          | 1SG
     .header__right_box
-      ul.header__menu_list.header__item--desktop
+      ul.header__menu_list
         each  urlPath, key in menu
           li.header__menu_item
             if selected === key
               a.header__menu_link.state-active(href= urlPath)= key
             else
               a.header__menu_link(href= urlPath)= key
+
+#mobile-close.navgation__side
+  a.navgation__side_closebtn(href='javascript:void(0)', onclick='closeNav()')
+    span
+    span
+  .header__right_box
+    ul.header__menu_list
+      each  urlPath, key in menu
+        li.header__menu_item
+          if selected === key
+            a.header__menu_link.state-active(href= urlPath)= key
+          else
+            a.header__menu_link(href= urlPath)= key
+#mobile-nav.js-header
+  .navgation__hamburger.js-header(onclick='openNav()')
+    span
+    span
+    span

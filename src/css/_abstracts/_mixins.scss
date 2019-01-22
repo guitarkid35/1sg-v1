@@ -44,3 +44,9 @@
     color: inherit;
   }
 }
+@mixin u-clearfix{
+  &, &:before, &:after {
+    content: " ";
+    display: table;
+  }
+}

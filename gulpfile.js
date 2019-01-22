@@ -39,9 +39,8 @@ gulp.task('vendor', function() {
 
 gulp.task('vendor', function() {
   gulp.src([
-    'bower_components/wow/dist/wow.js',
-    'bower_components/fancybox/dist/jquery.fancybox.min.js',
-    'bower_components/paroller/dist/jquery.paroller.js'])
+    'bower_components/wow/dist/wow.min.js',
+    'bower_components/fancybox/dist/jquery.fancybox.js'])
     .pipe(plumber())
     .pipe(concat('vendor.js'))
     .pipe(size())
@@ -80,8 +79,7 @@ gulp.task('main_js', function() {
   gulp.src([
     'bower_components/jQuery/dist/jquery.min.js',
     'bower_components/webfontloader/webfontloader.js',
-    'bower_components/filterizr/src/jquery.filterizr.js',
-    'bower_components/slick-carousel/slick/slick.min.js',
+    'bower_components/paroller/dist/jquery.paroller.js',
     'src/js/main.js'])
     .pipe(plumber())
     .pipe(concat('main.js'))
@@ -138,6 +136,4 @@ gulp.task('serve', ['css', 'main_js', 'compress_img', 'pug', 'browser-sync'], fu
 });
 
 gulp.task('compile', ['vendor', 'css', 'main_js', 'compress_img', 'pug']);
-
-
 

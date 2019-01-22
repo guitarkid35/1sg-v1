@@ -21,7 +21,7 @@
   }
   .home {
     &__title {
-      @include font_loader($montserrat, 5, 'n');
+      @include font_loader($montserrat, 4, 'n');
       color: $color-gray-ligtest;
       text-transform: uppercase;
       letter-spacing: .0.5em;

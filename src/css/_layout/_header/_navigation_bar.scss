@@ -1,9 +1,3 @@
-//this component is used for easier navigation and is not a part of the tool. Yet, you still can use it in your projects if you want.
-.page_wrapper--presentation-navbar {
-  // @media (#{$min_tablets}) {
-  //   padding-top: 70px;
-  // }
-}
 .navigation_bar {
   position: fixed;
   z-index: 10000;
@@ -20,15 +14,8 @@
     right: 0;
     top: 0;
   }
-  @media (#{$max_tablets}) {
-    display: none;
-  }
-  &.is-default {
-    &:before {
-      height: 70px;
-      background-color: $color-blue-darker;
-      box-shadow: 0 2px 4px rgba($black, .1);
-    }
+  @media (max-width: 480px) {
+    visibility: hidden;
   }
   &.is-show {
     &:before {
@@ -77,3 +64,96 @@
     font-size: 9px; 
   }
 }
+#mobile {
+  @include u-clearfix;
+}
+.navgation__side {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: $color-blue-darker;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1000;
+  &_closebtn {
+    position: absolute;
+    right:0;
+    top:0;
+    width: 60px;
+    height: 70px;
+    transition: all 0.5s;
+    z-index: 1000px;
+    span {
+      width: 28px;
+      height: 2px;
+      background-color: $color-primary;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      &:nth-child(1) {
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+    }
+  }
+}
+#mobile-nav {
+  transition: margin-right .5s;
+  padding: 16px;
+  height: 70px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 998;
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  &.is-show {
+    &:before {
+      height: 70px;
+      background-color: $color-blue-darker;
+      box-shadow: 0 2px 4px rgba($black, .1);
+      transition: height .3s cubic-bezier(.0, .0, 1, 1);
+    }
+  }
+  .navgation__hamburger {
+    height: 70px;
+    position: fixed;
+    top:0;
+    right:0;
+    cursor: pointer;
+    display: block;
+    padding:16px;
+    padding-top: 26px;
+    z-index: 999;
+    visibility: hidden;
+    @media (max-width: 480px) {
+      visibility: visible;
+    }
+    span {
+      display: block;
+      height: 2px;
+      width: 24px;
+      background-color: $color-primary;
+      margin-bottom: 6px;
+      transition: all 0.3s;
+    }
+  }
+}
+
+
+
+

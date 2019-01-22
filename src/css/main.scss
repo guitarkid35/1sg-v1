@@ -2,13 +2,8 @@
 @import '../../bower_components/bootstrap/scss/bootstrap';
 // == END OF BOOTSTRAP CSS ==
 
-// == START OF SLICK CSS ==
-@import "../../bower_components/slick-carousel/slick/slick.scss";
-@import "../../bower_components/slick-carousel/slick/slick-theme.scss";
-// == END OF SLICK CSS ==
 
-
-// == START OF CEPAVE CSS ==
+// == START OF 1SG CSS ==
 @import '_abstracts/_fonts';
 @import '_abstracts/_variables';
 @import '_abstracts/_mixins';
@@ -56,7 +51,7 @@
   @import '_section/_contact/_contact';
 
 @import '_layout/_header/_navigation_bar';
-// == END OF CEPAVE CSS ==
+// == END OF 1SG CSS ==
 .debug {
   *, *:before, *:after {
     border: 1px solid $black;

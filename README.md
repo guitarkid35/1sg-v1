@@ -1,6 +1,6 @@
-# cepave official site
+# 1SG official site
 
-> cepave 官網 Galactico 版本
+> 1SG 官網
 
 ## How to install
 
@@ -18,6 +18,3 @@ Installation process:
 1. Clone this repository
 2. Run ```npm install``` to install dependencies
 3. Run ```bower install``` to install dependencies
-
-## Usage
-* todo...
